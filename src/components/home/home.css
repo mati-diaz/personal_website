@@ -69,6 +69,19 @@
     width: 100%;
     border: 1px solid white;
     background-color: rgb(37, 37, 37);
+    font-weight: 600;
+    transition-property: all;
+    transition-duration: .2s;
+}
+
+.home__buttons a:hover {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+} 
+
+.home__buttons a:hover img {
+    filter: invert(1);
 }
 
 .home__decoration {
