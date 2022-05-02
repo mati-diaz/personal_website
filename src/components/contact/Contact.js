@@ -5,8 +5,20 @@ export const Contact = () => {
     const [state, handleSubmit] = useForm("xqkngyza");
 
     return (
-        <section id='contact'>
-            { state.succeeded && <p className='msg-success'>Mensaje Enviado</p> }
+        <div className='page'>
+            {
+                state.submitting &&
+                <p className='animate__animated animate__zoomIn loading-form'>Enviando...</p>
+            }
+            {
+                state.succeeded &&
+                <p className='animate__animated animate__zoomIn msg-success'>
+                    <span className="material-icons">
+                        check_circle_outline
+                    </span>
+                    Mensaje Enviado
+                </p>
+            }
             <h2 className='subtitle'>Contacto</h2>
             <div className='contact-content'>
                 <div className='contact-content__extras'>
@@ -65,10 +77,14 @@ export const Contact = () => {
                         errors={state.errors}
                     />
                     <div className='center'>
-                        <button className='contact-form__button' type='submit' disabled={state.submitting}>Enviar</button>
+                        <button
+                            className='contact-form__button'
+                            type='submit'
+                            disabled={state.submitting}
+                        >Enviar</button>
                     </div>
                 </form>
             </div>
-        </section>
+        </div>
     )
 }

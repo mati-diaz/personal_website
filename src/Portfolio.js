@@ -5,7 +5,9 @@ function Portfolio() {
     return (
        <div>
            <NavBar />
-           <Outlet />
+           <div>
+                <Outlet />
+           </div>
        </div>
     );
 }

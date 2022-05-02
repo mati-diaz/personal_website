@@ -60,7 +60,7 @@
 }
 
 .nav_active {
-    background-color: #00a1fb;
+    background-color: #00a1fb !important;
 }
 
 @media (max-width: 768px) {

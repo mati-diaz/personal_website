@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
+// import { Loading } from '../loading/Loading';
 import './home.css';
 
 export const Home = () => {
     return (
-        <section id='home'>
+        <div className='page home'>
+            {/* { <Loading /> } */}
             <div className='home__content'>
                 <h1 className='name'>Matias<br />Diaz Ruiz</h1>
                 <p className='info'>Desarrollador web FullStack</p>
@@ -22,6 +24,6 @@ export const Home = () => {
             <div className='home__decoration'>
                 <img className='home__img' src="/img/code.svg" alt="" />
             </div>
-        </section>
+        </div>
     )
 }

@@ -1,13 +1,9 @@
-#home {
+.home {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow: hidden;
     gap: 20px;
     min-height: 100vh;
-    width: 90%;
-    margin: 0 auto;
-    padding-left: 200px
 }
 
 .home__img {
@@ -21,9 +17,7 @@
 }
 
 .name {
-    /* text-transform: uppercase; */
     letter-spacing: 0px;
-    /* text-align: center; */
     font-weight: 800;
     font-size: 100px;
     line-height: .85;
@@ -32,13 +26,11 @@
 
 .info {
     font-size: 32px;
-    /* text-align: center; */
     font-weight: 100;
     margin-top: 10px;
 }
 
 .contact_btn {
-    /* border-radius: 10px; */
     background-color: #00a1fb;
     padding: 5px 0;
     display: block;
@@ -100,16 +92,16 @@
 }
 
 @media (max-width: 768px) {
-    #home img {
-        max-width: 100%;
+    .home {
+        min-height: calc(100vh - 59px);
     }
-    #home {
-        padding-left: 0;
+    .home img {
+        max-width: 100%;
     }
 }
 
 @media (max-width: 992px) {
-    #home {
+    .home {
         justify-content: space-evenly;
     }
 

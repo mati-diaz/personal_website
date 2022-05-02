@@ -2,7 +2,7 @@ import './about.css';
 
 export const About = () => {
     return (
-        <section id='about'>
+        <div className='page'>
             <h2 className='subtitle'>Sobre Mi</h2>
             <div className='about-content'>
                 <p className='about-content__info'>Hola, soy un desarrollador fullstack junior en constante formación, me gusta poner en practica las tecnologias que aprendo creando proyectos utiles en la vida real. Actualmente me estoy capacitando en el uso del framework Next.Js y estoy en busca de oportunidades y/o proyectos donde pueda aplicar mis conocimientos.</p>
@@ -78,6 +78,6 @@ export const About = () => {
                     </ul>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }

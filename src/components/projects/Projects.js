@@ -3,7 +3,7 @@ import './projects.css';
 
 export const Projects = () => {
     return (
-        <section id='projects'>
+        <div className='page'>
             <h2 className='subtitle'>Proyectos</h2>
             <div className='projects-content'>
                 <div className='projects-container'>
@@ -39,6 +39,6 @@ export const Projects = () => {
                     />
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
