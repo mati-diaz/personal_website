@@ -72,12 +72,22 @@
     font-weight: 600;
     transition-property: all;
     transition-duration: .2s;
+
+    background-image: linear-gradient(
+        white 0%,
+        white 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size .5s;
 }
 
 .home__buttons a:hover {
-    background-color: white;
     color: black;
-    font-weight: 600;
+
+    background-size: 100% 100%;
+    background-position-x: left;
 } 
 
 .home__buttons a:hover img {
