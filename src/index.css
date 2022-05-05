@@ -47,7 +47,7 @@ a {
 }
 
 .page {
-    /* min-height: 100vh; */
+    overflow-x: hidden;
     width: 90%;
     margin: 0 auto;
     padding-left: 200px;
@@ -111,7 +111,8 @@ header {
 .material-icons.md-48 { font-size: 48px; }
 
 :root {
-    --animate-duration: 300ms;
+    --animate-delay: 1.8s;
+    --animate-duration: 600ms;
 }
 
 ::placeholder {

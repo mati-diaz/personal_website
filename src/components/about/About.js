@@ -1,12 +1,14 @@
+import { Transition } from '../transition/Transition';
 import './about.css';
 
 export const About = () => {
     return (
         <div className='page'>
-            <h2 className='subtitle'>Sobre Mi</h2>
+            <Transition title='Sobre Mí' />
+            <h2 className='subtitle'>Sobre Mí</h2>
             <div className='about-content'>
-                <p className='about-content__info'>Hola, soy un desarrollador fullstack junior en constante formación, me gusta poner en practica las tecnologias que aprendo creando proyectos utiles en la vida real. Actualmente me estoy capacitando en el uso del framework Next.Js y estoy en busca de oportunidades y/o proyectos donde pueda aplicar mis conocimientos.</p>
-                <div className='about-content__technologies'>
+                <p className='about-content__info animate__slideInUp animate__animated animate__delay-1s'>Hola, soy un desarrollador fullstack junior en constante formación, me gusta poner en practica las tecnologias que aprendo creando proyectos utiles en la vida real. Actualmente me estoy capacitando en el uso del framework Next.Js y estoy en busca de oportunidades y/o proyectos donde pueda aplicar mis conocimientos.</p>
+                <div className='about-content__technologies animate__slideInUp animate__animated animate__delay-1s'>
                     <p>Tecnologias con las que trabajo:</p>
                     <ul className='technologies-list'>
                         <li className='technologies-list__item'>

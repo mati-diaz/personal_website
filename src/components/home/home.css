@@ -1,9 +1,10 @@
-.home {
+#home {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
     min-height: 100vh;
+    padding-bottom: 0;
 }
 
 .home__img {
@@ -79,15 +80,13 @@
     );
     background-repeat: no-repeat;
     background-size: 0% 100%;
-    background-position-x: right;
-    transition: background-size .5s;
+    background-position-x: left;
+    transition: background-size .3s;
 }
 
 .home__buttons a:hover {
     color: black;
-
     background-size: 100% 100%;
-    background-position-x: left;
 } 
 
 .home__buttons a:hover img {
@@ -115,8 +114,9 @@
 }
 
 @media (max-width: 768px) {
-    .home {
-        min-height: calc(100vh - 59px);
+    #home {
+        min-height: calc(100vh - 60px);
+        padding-bottom: 60px;
     }
     .home img {
         max-width: 100%;

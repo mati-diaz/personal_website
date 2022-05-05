@@ -3,12 +3,10 @@ import { Outlet } from 'react-router-dom';
 
 function Portfolio() {
     return (
-       <div>
-           <NavBar />
-           <div>
-                <Outlet />
-           </div>
-       </div>
+        <div>
+            <NavBar />
+            <Outlet />
+        </div>
     );
 }
 

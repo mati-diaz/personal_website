@@ -35,7 +35,7 @@ export const Projects = () => {
                         projectImg='portfolio'
                         description='Mi sitio web personal, aqui publico los proyectos en los que trabajo, en constante actualización.'
                         github='https://github.com/mati-diaz/portfolio'
-                        website=''
+                        website='https://portfolio-mdr.vercel.app/'
                     />
                 </div>
             </div>
