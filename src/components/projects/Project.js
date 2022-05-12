@@ -1,9 +1,6 @@
-import { Transition } from "../transition/Transition"
-
 export const Project = ({ title, technologies, projectImg, description, github, website }) => {
     return (
         <div className='project'>
-            <Transition title='Proyectos' />
             <img className='project__img' src={'./img/' + projectImg + '.png'} alt='project img' />
             <div className='project__info'>
                 <h3 className='project__title'>{ title }</h3>

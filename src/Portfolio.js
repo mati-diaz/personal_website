@@ -1,7 +1,7 @@
 import { NavBar } from './components/navBar/NavBar';
 import { Outlet } from 'react-router-dom';
 
-function Portfolio() {
+export const Portfolio = () => {
     return (
         <div>
             <NavBar />
@@ -9,5 +9,3 @@ function Portfolio() {
         </div>
     );
 }
-
-export default Portfolio;

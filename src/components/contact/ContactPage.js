@@ -2,7 +2,7 @@ import './contact.css';
 import { useForm, ValidationError } from '@formspree/react';
 import { Transition } from '../transition/Transition';
 
-export const Contact = () => {
+export const ContactPage = () => {
     const [state, handleSubmit] = useForm("xqkngyza");
 
     return (

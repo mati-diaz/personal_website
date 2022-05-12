@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Portfolio from './Portfolio';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Home } from './components/home/Home';
-import { About } from './components/about/About';
-import { Projects } from './components/projects/Projects';
-import { Contact } from './components/contact/Contact';
+
+import { Portfolio } from './Portfolio';
+import { HomePage } from './components/home/HomePage';
+import { AboutPage } from './components/about/AboutPage';
+import { ProjectsPage } from './components/projects/ProjectsPage';
+import { ContactPage } from './components/contact/ContactPage';
+
 import './index.css';
 
 ReactDOM.render(
@@ -14,19 +16,19 @@ ReactDOM.render(
             <Route path='/' element={ <Portfolio /> }>
                 <Route 
                     index
-                    element={ <Home /> }
+                    element={ <HomePage /> }
                 />
                 <Route
                     path='about'
-                    element={ <About /> }
+                    element={ <AboutPage /> }
                 />
                 <Route
                     path='projects'
-                    element={ <Projects /> }
+                    element={ <ProjectsPage /> }
                 />
                 <Route
                     path='contact'
-                    element={ <Contact /> }
+                    element={ <ContactPage /> }
                 />
             </Route>
         </Routes>

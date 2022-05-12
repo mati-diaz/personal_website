@@ -2,12 +2,14 @@ import { Link } from 'react-router-dom';
 import { Transition } from '../transition/Transition';
 import './home.css';
 
-export const Home = () => {
+export const HomePage = () => {
     return (
         <div className='page' id='home'>
             <Transition title='Inicio' />
             <div className='home__content'>
-                <h1 className='name animate__animated animate__fadeInDown animate__delay-1s'>Matias<br />Diaz<br />Ruiz</h1>
+                <h1 className='name animate__animated animate__fadeInDown animate__delay-1s'>
+                    <span className='name-first-letter'>M</span>atias<br />Diaz<br />Ruiz
+                </h1>
                 <p className='info'>Desarrollador web FullStack</p>
                 <Link to='/contact' className='contact_btn'>Contactame</Link>
                 <div className='home__buttons animate__fadeInUp animate__animated animate__delay-1s'>

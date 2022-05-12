@@ -1,28 +1,23 @@
 .about-content {
     display: flex;
     flex-direction: column;
-    font-size: 22px;
     gap: 50px;
     border-radius: 5px;
 }
 
 .about-content__info {
     flex-basis: 60%;
-    /* background-color: rgb(39, 39, 39);
+    background-color: rgb(39, 39, 39);
     padding: 30px;
-    text-align: center; */
 }
 
 .about-content__technologies {
-    font-size: 22px;
-    /* padding: 30px;
-    text-align: center;
-    background-color: rgb(39, 39, 39); */
+    /* font-size: 22px; */
 }
 
 .technologies-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 10px;
     margin-top: 30px;
 }
@@ -47,12 +42,8 @@
 }
 
 .technologies-list__img {
-    height: 60px;
-}
-
-.technologies-list__overlay {
-    font-weight: 700;
-    font-size: 20px;
+    height: 50px;
+    filter: drop-shadow(0px 0px 1px rgb(126, 126, 126));
 }
 
 @media (max-width: 600px) {
@@ -71,21 +62,10 @@
     .about-content {
         padding: 0px;
     }
-    .about-content__info {
-        font-size: 18px;
-    }
-    .about-content__technologies {
-        font-size: 18px;
-    }
     .technologies-list {
         grid-template-columns: repeat(3, 1fr);
     }
     .technologies-list__item {
         gap: 10px;
-    }
-
-    .technologies-list__overlay {
-        font-weight: 700;
-        font-size: 15px;
     }
 }

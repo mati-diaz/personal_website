@@ -12,19 +12,21 @@ export const NavBar = () => {
             </Link>
             <ul className='nav_items'>
                 <NavLink className={activeLink} to='/'>
-                    <span className="material-icons">home</span>
+                    <span class="material-symbols-outlined">
+                        home
+                    </span>
                     <p className='nav_item_text'>Inicio</p>
                 </NavLink>
                 <NavLink className={activeLink} to='/about'>
-                    <span className="material-icons">person</span>
+                    <span className="material-symbols-outlined">person</span>
                     <p className='nav_item_text'>Sobre Mi</p>
                 </NavLink>
                 <NavLink className={activeLink} to='/projects'>
-                    <span className="material-icons">work</span>
+                    <span className="material-symbols-outlined">work</span>
                     <p className='nav_item_text'>Proyectos</p>
                 </NavLink>
                 <NavLink className={activeLink} to='/contact'>
-                    <span className="material-icons">call</span>
+                    <span className="material-symbols-outlined">call</span>
                     <p className='nav_item_text'>Contacto</p>
                 </NavLink>
             </ul>

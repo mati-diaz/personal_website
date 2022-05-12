@@ -1,0 +1,50 @@
+[
+  {
+    "name": "HTML5",
+    "img": "html"
+  },
+  {
+    "name": "CSS3",
+    "img": "css"
+  },
+  {
+    "name": "JavaScript",
+    "img": "js"
+  },
+  {
+    "name": "Sass",
+    "img": "sass"
+  },
+  {
+    "name": "React",
+    "img": "react"
+  },
+  {
+    "name": "Redux",
+    "img": "redux"
+  },
+  {
+    "name": "NextJs",
+    "img": "nextjs"
+  },
+  {
+    "name": "NodeJs",
+    "img": "node"
+  },
+  {
+    "name": "Express",
+    "img": "express"
+  },
+  {
+    "name": "MongoDB",
+    "img": "mongo"
+  },
+  {
+    "name": "MySQL",
+    "img": "mysql"
+  },
+  {
+    "name": "Git",
+    "img": "git"
+  }
+]

@@ -26,6 +26,8 @@ body {
     background-color: #1f1f1f;
     color: white;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -105,10 +107,13 @@ header {
     align-items: center;
 }
 
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 48
+}
 
 :root {
     --animate-delay: 1.8s;
@@ -127,7 +132,9 @@ header {
 }
 
 @media (max-width: 768px) {
-
+    body {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 768px) {
