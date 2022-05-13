@@ -13,6 +13,7 @@
     background-color: rgb(39, 39, 39);
     padding: 30px;
     gap: 20px;
+    box-shadow: 0px 0px 2px rgb(113, 113, 113);
 }
 
 .project__title {

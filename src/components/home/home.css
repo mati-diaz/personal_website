@@ -23,7 +23,7 @@
     font-size: 100px;
     line-height: .85;
     margin-left: -5px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .info {

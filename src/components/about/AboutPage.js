@@ -1,4 +1,5 @@
 import { Transition } from '../transition/Transition';
+import certificates from '../../data/certificates.json';
 import stack from '../../data/stack.json';
 import './about.css';
 
@@ -27,7 +28,25 @@ export const AboutPage = () => {
                     </ul>
                 </div>
                 <div className='about__certificates'>
-                    
+                    <p>Mis certificados</p>
+                    <ul>
+                        {
+                            certificates.map(certificate => (
+                                <li key={ certificate.name } className='certificate'>
+                                    <div className='certificate__info'>
+                                        <img src={ `/img/${certificate.img}.jpg` } alt="" className='certificate__img' />
+                                        <p>{ certificate.name }</p>
+                                    </div>
+                                    <a href={ certificate.link } target='_blank' rel='noreferrer' className='certificate__link'>
+                                        Ver
+                                        <span className='material-symbols-outlined'>
+                                            open_in_new
+                                        </span>
+                                    </a>
+                                </li>
+                            ))
+                        }
+                    </ul>
                 </div>
             </div>
         </div>

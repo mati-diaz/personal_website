@@ -1,12 +1,13 @@
 .about {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 80px;
 }
 
 .about__info {
     background-color: rgb(39, 39, 39);
     padding: 30px;
+    box-shadow: 0px 0px 2px rgb(113, 113, 113);
 }
 
 .about__stack {
@@ -30,6 +31,7 @@
     background-color: rgb(39, 39, 39);
     transition-property: background-color;
     transition-duration: .5s;
+    box-shadow: 0px 0px 2px rgb(113, 113, 113);
 }
 
 .stack-list__item:hover {
@@ -39,6 +41,37 @@
 .stack-list__img {
     height: 60px;
     filter: drop-shadow(0px 0px 1px rgb(126, 126, 126));
+}
+
+.about__certificates {
+    text-align: center;
+}
+
+.certificate {
+    background-color: rgb(39, 39, 39);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    box-shadow: 0px 0px 2px rgb(113, 113, 113);
+}
+
+.certificate__info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.certificate__img {
+    max-width: 40px;
+    border-radius: 5px;
+}
+
+.certificate__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 @media (max-width: 600px) {
