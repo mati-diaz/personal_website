@@ -12,9 +12,7 @@ export const NavBar = () => {
             </Link>
             <ul className='nav_items'>
                 <NavLink className={activeLink} to='/'>
-                    <span class="material-symbols-outlined">
-                        home
-                    </span>
+                    <span className="material-symbols-outlined">home</span>
                     <p className='nav_item_text'>Inicio</p>
                 </NavLink>
                 <NavLink className={activeLink} to='/about'>
@@ -26,7 +24,7 @@ export const NavBar = () => {
                     <p className='nav_item_text'>Proyectos</p>
                 </NavLink>
                 <NavLink className={activeLink} to='/contact'>
-                    <span className="material-symbols-outlined">call</span>
+                    <span className="material-symbols-outlined">mail</span>
                     <p className='nav_item_text'>Contacto</p>
                 </NavLink>
             </ul>
