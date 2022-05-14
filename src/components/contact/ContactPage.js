@@ -25,7 +25,7 @@ export const ContactPage = () => {
             <div className='contact-content'>
                 <div className='contact-content__extras'>
                     <a
-                        className='contact-extra animate__fadeInLeft animate__animated animate__delay-1s'
+                        className='contact-extra'
                         href='https://www.linkedin.com/in/mati-diaz/'
                         target='_blank'
                         rel='noreferrer'
@@ -34,7 +34,7 @@ export const ContactPage = () => {
                         <p className='contact-extra__text'>Linkedin</p>
                     </a>
                     <a
-                        className='contact-extra animate__fadeInLeft animate__animated animate__delay-1s'
+                        className='contact-extra'
                         href='https://github.com/mati-diaz'
                         target='_blank'
                         rel='noreferrer'
@@ -43,7 +43,7 @@ export const ContactPage = () => {
                         <p className='contact-extra__text'>GitHub</p>
                     </a>
                     <a
-                        className='contact-extra animate__fadeInLeft animate__animated animate__delay-1s'
+                        className='contact-extra'
                         href='mailto:matidiazruiz42@gmail.com'
                         target='_blank'
                         rel='noreferrer'
@@ -53,7 +53,7 @@ export const ContactPage = () => {
                     </a>
                 </div>
                 <form
-                    className='contact-form animate__fadeInRight animate__animated animate__delay-1s'
+                    className='contact-form'
                     onSubmit={ handleSubmit }
                 >
                     <h3 className='contact-form__title'>Enviame un mensaje</h3>

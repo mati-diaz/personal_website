@@ -2,14 +2,11 @@
     display: flex;
     gap: 20px;
     flex-direction: column;
-    background-color: initial;
 }
 
 .project {
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
     background-color: rgb(39, 39, 39);
     padding: 30px;
     gap: 20px;
@@ -22,11 +19,11 @@
 
 .project__img {
     width: 50%;
-    z-index: 10;
     border: 1px solid #ffffff;
 }
 
 .project__info {
+    font-size: 16px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -40,7 +37,7 @@
 }
 
 .project-technologies__img {
-    height: 30px;
+    height: 25px;
 }
 
 .project__buttons {
