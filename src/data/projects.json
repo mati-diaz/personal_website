@@ -8,6 +8,14 @@
     "website": "https://blog-app-gold.vercel.app/"
   },
   {
+    "title": "Get The Lyrics",
+    "description": "Sitio web creado para buscar letras de canciones usando una api publica. Para estilizar este proyecto use styled components.",
+    "stack": ["react", "js", "css"],
+    "img": "get-the-lyrics",
+    "github": "https://github.com/mati-diaz/get-the-lyrics",
+    "website": "https://get-the-lyrics.vercel.app/"
+  },
+  {
     "title": "Landing Page",
     "description": "Sitio web creado para practicar HTML, CSS y JavaScript, muestra la información de una tienda de chocolates ficticia.",
     "stack": ["html", "css", "js"],
