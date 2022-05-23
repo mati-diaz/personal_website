@@ -14,9 +14,7 @@ export const ContactPage = () => {
             {
                 state.succeeded &&
                 <p className='animate__animated animate__zoomIn msg-success'>
-                    <span className="material-icons">
-                        check_circle_outline
-                    </span>
+                    <span className="material-symbols-outlined">check_circle_outline</span>
                     Mensaje Enviado
                 </p>
             }

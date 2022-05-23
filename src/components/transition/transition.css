@@ -38,10 +38,10 @@
 
     background-image: linear-gradient(
         #00a1fb 0%,
-        #00a1fb 5%,
-        transparent 5%,
-        transparent 95%,
-        #00a1fb 95%,
+        #00a1fb 10%,
+        transparent 10%,
+        transparent 90%,
+        #00a1fb 90%,
         #00a1fb 100%
     );
     background-repeat: no-repeat;
