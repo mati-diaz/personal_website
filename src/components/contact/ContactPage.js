@@ -7,6 +7,7 @@ export const ContactPage = () => {
         name: '',
         email: '',
         message: '',
+        success: false,
         error: false,
         loading: false,
         nameMissing: false,
@@ -21,6 +22,7 @@ export const ContactPage = () => {
         nameMissing,
         emailMissing,
         messageMissing,
+        success,
         error,
         loading
     } = state;
@@ -32,7 +34,7 @@ export const ContactPage = () => {
         });
     }
 
-    const handleSubmitForm = (e) => {
+    const handleSubmitForm = async (e) => {
         e.preventDefault();
         const missings = {
             nameMissing: !name,
@@ -45,27 +47,65 @@ export const ContactPage = () => {
                 ...missings
             });
         }
-        console.log('a')
-        // if (!name || !email || !message) 
-        // fetch('https://formspree.io/f/xqkngyza', {
-        //     method: 'POST',
+        setState({
+            ...state,
+            ...missings,
+            loading: true
+        });
 
-        // });
+        try {
+            const rawRes = await fetch('https://formspree.io/f/xqkngyza', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({name, email, message})
+            });
+            const res = await rawRes.json();
+            if (res.ok) {
+                setState({
+                    ...state,
+                    ...missings,
+                    loading: false,
+                    success: true
+                });
+            } else {
+                setState({
+                    ...state,
+                    loading: false,
+                    error: true
+                });
+            }
+        } catch (error) {
+            setState({
+                ...state,
+                loading: false,
+                error: true
+            });
+        }
+        setTimeout(() => {
+            setState({
+                ...state,
+                error: false,
+                success: false
+            });
+        }, 4000);
     }
 
     return (
         <div className='page'>
             {
                 (nameMissing || emailMissing || messageMissing) &&
-                <p className='animate__animated animate__zoomIn loading-form'>Faltan campos por completar</p>
+                <p className='animate__animated animate__zoomIn msg msg__danger'>Faltan campos por completar</p>
             }
             {
-                state.submitting &&
-                <p className='animate__animated animate__zoomIn loading-form'>Enviando...</p>
+                loading &&
+                <p className='animate__animated animate__zoomIn msg msg__success'>Enviando...</p>
             }
             {
-                state.succeeded &&
-                <p className='animate__animated animate__zoomIn msg-success'>
+                success &&
+                <p className='animate__animated animate__zoomIn msg msg__success'>
                     <span className="material-symbols-outlined">check_circle_outline</span>
                     Mensaje Enviado
                 </p>
@@ -110,7 +150,7 @@ export const ContactPage = () => {
                     <div className='contact-form__inputs'>
                         <input
                             id='name'
-                            className={ !nameMissing ? 'contact-form__input' : 'contact-form__input missing' }
+                            className={ !nameMissing ? 'contact-form__input' : 'contact-form__input missing-input' }
                             name='name'
                             placeholder='Nombre'
                             type='text'
@@ -119,7 +159,7 @@ export const ContactPage = () => {
                         />
                         <input
                             id='email'
-                            className={ !emailMissing ? 'contact-form__input' : 'contact-form__input missing' }
+                            className={ !emailMissing ? 'contact-form__input' : 'contact-form__input missing-input' }
                             name='email'
                             placeholder='Correo'
                             type='email'
@@ -129,7 +169,7 @@ export const ContactPage = () => {
                     </div>
                     <textarea
                         id='message'
-                        className={ !messageMissing ? 'contact-form__textarea' : 'contact-form__textarea missing' }
+                        className={ !messageMissing ? 'contact-form__textarea' : 'contact-form__textarea missing-textarea' }
                         name='message'
                         placeholder='Mensaje'
                         rows='10'
