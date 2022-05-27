@@ -41,6 +41,10 @@
     transition-duration: .5s;
 }
 
+.missing {
+    border-bottom: 4px solid rgb(255, 52, 52);
+}
+
 .contact-form__input:last-of-type {
     margin-right: 0;
 }

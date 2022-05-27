@@ -1,12 +1,64 @@
 import './contact.css';
-import { useForm, ValidationError } from '@formspree/react';
 import { Transition } from '../transition/Transition';
+import { useState } from 'react';
 
 export const ContactPage = () => {
-    const [state, handleSubmit] = useForm("xqkngyza");
+    const [state, setState] = useState({
+        name: '',
+        email: '',
+        message: '',
+        error: false,
+        loading: false,
+        nameMissing: false,
+        emailMissing: false,
+        messageMissing: false
+    });
+
+    const {
+        name,
+        email,
+        message,
+        nameMissing,
+        emailMissing,
+        messageMissing,
+        error,
+        loading
+    } = state;
+
+    const handleInputChange = (e) => {
+        setState({
+            ...state,
+            [e.target.name]: e.target.value
+        });
+    }
+
+    const handleSubmitForm = (e) => {
+        e.preventDefault();
+        const missings = {
+            nameMissing: !name,
+            emailMissing: !email,
+            messageMissing: !message
+        }
+        if(!name || !email || !message) {
+            return setState({
+                ...state,
+                ...missings
+            });
+        }
+        console.log('a')
+        // if (!name || !email || !message) 
+        // fetch('https://formspree.io/f/xqkngyza', {
+        //     method: 'POST',
+
+        // });
+    }
 
     return (
         <div className='page'>
+            {
+                (nameMissing || emailMissing || messageMissing) &&
+                <p className='animate__animated animate__zoomIn loading-form'>Faltan campos por completar</p>
+            }
             {
                 state.submitting &&
                 <p className='animate__animated animate__zoomIn loading-form'>Enviando...</p>
@@ -52,48 +104,38 @@ export const ContactPage = () => {
                 </div>
                 <form
                     className='contact-form'
-                    onSubmit={ handleSubmit }
+                    onSubmit={ handleSubmitForm }
                 >
                     <h3 className='contact-form__title'>Enviame un mensaje</h3>
                     <div className='contact-form__inputs'>
                         <input
                             id='name'
-                            className='contact-form__input'
+                            className={ !nameMissing ? 'contact-form__input' : 'contact-form__input missing' }
                             name='name'
                             placeholder='Nombre'
                             type='text'
-
-                        />
-                        <ValidationError 
-                            prefix="Name" 
-                            field="name"
-                            errors={state.errors}
+                            value={ name }
+                            onChange={ handleInputChange }
                         />
                         <input
                             id='email'
-                            className='contact-form__input'
+                            className={ !emailMissing ? 'contact-form__input' : 'contact-form__input missing' }
                             name='email'
                             placeholder='Correo'
                             type='email'
-                        />
-                        <ValidationError 
-                            prefix="Email" 
-                            field="email"
-                            errors={state.errors}
+                            value={ email }
+                            onChange={ handleInputChange }
                         />
                     </div>
                     <textarea
                         id='message'
-                        className='contact-form__textarea'
+                        className={ !messageMissing ? 'contact-form__textarea' : 'contact-form__textarea missing' }
                         name='message'
                         placeholder='Mensaje'
                         rows='10'
+                        value={ message }
+                        onChange={ handleInputChange }
                     ></textarea>
-                    <ValidationError 
-                        prefix="Message" 
-                        field="message"
-                        errors={state.errors}
-                    />
                     <div className='center'>
                         <button
                             className='contact-form__button'
