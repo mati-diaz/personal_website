@@ -12,6 +12,10 @@
     "img": "js"
   },
   {
+    "name": "TypeScript",
+    "img": "ts"
+  },
+  {
     "name": "Sass",
     "img": "sass"
   },
