@@ -39,6 +39,8 @@
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: 0% 100%;
+    transition-property: background-size;
+    transition-duration: .5s;
 }
 
 .contact-form__input {
@@ -60,8 +62,7 @@
 }
 
 .contact-form__input:focus, .contact-form__textarea:focus {
-    animation: underlineAnim .5s ease;
-    animation-fill-mode: forwards;
+    background-size: 100% 100%;
 }
 
 .missing-input {
@@ -82,15 +83,6 @@
         #ff6f3e 100%
     );
     background-size: 100% 100%;
-}
-
-@keyframes underlineAnim {
-    0% {
-        background-size: 0% 100%;
-    }
-    100% {
-        background-size: 100% 100%;
-    }
 }
 
 .contact-form__input:last-of-type {
