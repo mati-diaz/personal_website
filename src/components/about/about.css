@@ -7,7 +7,8 @@
 .about__info {
     background-color: rgb(39, 39, 39);
     padding: 30px;
-    box-shadow: 0px 0px 2px rgb(113, 113, 113);
+    line-height: 1.5;
+    border: 1px solid rgb(59, 59, 59);
 }
 
 .about__stack {
@@ -27,11 +28,11 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
-    padding: 20px;
+    padding: 20px 10px;
     background-color: rgb(39, 39, 39);
     transition-property: background-color;
     transition-duration: .5s;
-    box-shadow: 0px 0px 2px rgb(113, 113, 113);
+    border: 1px solid rgb(59, 59, 59);
 }
 
 .stack-list__item:hover {
@@ -39,7 +40,7 @@
 }
 
 .stack-list__img {
-    height: 60px;
+    height: 50px;
     filter: drop-shadow(0px 0px 1px rgb(126, 126, 126));
 }
 
@@ -53,7 +54,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
-    box-shadow: 0px 0px 2px rgb(113, 113, 113);
+    border: 1px solid rgb(59, 59, 59);
 }
 
 .certificate__info {

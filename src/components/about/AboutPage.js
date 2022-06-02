@@ -9,7 +9,7 @@ export const AboutPage = () => {
             <Transition title='Sobre Mí' />
             <h2 className='subtitle'>Sobre Mí</h2>
             <div className='about'>
-                <p className='about__info'>Hola, soy un desarrollador fullstack junior en constante formación, me gusta poner en practica las tecnologias que aprendo creando proyectos utiles en la vida real. Actualmente me estoy capacitando en el uso del framework Next.Js y estoy en busca de oportunidades y/o proyectos donde pueda aplicar mis conocimientos.</p>
+                <p className='about__info'>Hola, soy un desarrollador web junior en constante formación, me gusta poner en practica las tecnologias que aprendo creando proyectos utiles en la vida real. Actualmente me estoy capacitando en el uso del framework Next.Js y estoy en busca de oportunidades y/o proyectos donde pueda aplicar mis conocimientos.</p>
                 <div className='about__stack'>
                     <p>Tecnologias con las que trabajo</p>
                     <ul className='stack-list'>

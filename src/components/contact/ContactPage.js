@@ -80,6 +80,7 @@ export const ContactPage = () => {
         } catch (error) {
             setState({
                 ...state,
+                ...missings,
                 loading: false,
                 error: true
             });
@@ -109,6 +110,10 @@ export const ContactPage = () => {
                     <span className="material-symbols-outlined">check_circle_outline</span>
                     Mensaje Enviado
                 </p>
+            }
+            {
+                error && 
+                <p className='animate__animated animate__zoomIn msg msg__danger'>Error</p>
             }
             <Transition title='Contacto' />
             <h2 className='subtitle'>Contacto</h2>

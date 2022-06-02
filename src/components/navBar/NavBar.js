@@ -8,7 +8,7 @@ export const NavBar = () => {
     return (
         <nav className='nav_bar'>
             <Link className='nav_logo' to='/'>
-                <p><span>&#60;</span>MDR<span>&#62;</span></p>
+                <p><span>m</span></p>
             </Link>
             <ul className='nav_items'>
                 <NavLink className={activeLink} to='/'>

@@ -9,29 +9,32 @@ import { ProjectsPage } from './components/projects/ProjectsPage';
 import { ContactPage } from './components/contact/ContactPage';
 
 import './index.css';
+import ScrollToTop from './components/ScrollToTop';
 
 ReactDOM.render(
     <BrowserRouter>
-        <Routes>
-            <Route path='/' element={ <Portfolio /> }>
-                <Route 
-                    index
-                    element={ <HomePage /> }
-                />
-                <Route
-                    path='about'
-                    element={ <AboutPage /> }
-                />
-                <Route
-                    path='projects'
-                    element={ <ProjectsPage /> }
-                />
-                <Route
-                    path='contact'
-                    element={ <ContactPage /> }
-                />
-            </Route>
-        </Routes>
+        <ScrollToTop>
+            <Routes>
+                <Route path='/' element={ <Portfolio /> }>
+                    <Route 
+                        index
+                        element={ <HomePage /> }
+                    />
+                    <Route
+                        path='about'
+                        element={ <AboutPage /> }
+                    />
+                    <Route
+                        path='projects'
+                        element={ <ProjectsPage /> }
+                    />
+                    <Route
+                        path='contact'
+                        element={ <ContactPage /> }
+                    />
+                </Route>
+            </Routes>
+        </ScrollToTop>
     </BrowserRouter>,
     document.getElementById('root')
 );

@@ -10,7 +10,7 @@
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    box-shadow: 0px 0px 2px rgb(113, 113, 113);
+    border: 1px solid rgb(59, 59, 59);
 }
 
 .contact-form__title {
@@ -130,7 +130,7 @@
     height: 100%;
     min-width: 200px;
     background-color: rgb(39, 39, 39);
-    box-shadow: 0px 0px 2px rgb(113, 113, 113);
+    border: 1px solid rgb(59, 59, 59);
     transition-property: background-color;
     transition-duration: .5s;
 } 

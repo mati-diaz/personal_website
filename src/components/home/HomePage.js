@@ -10,7 +10,7 @@ export const HomePage = () => {
                 <h1 className='name'>
                     Matias<br />Diaz Ruiz
                 </h1>
-                <p className='info'>Desarrollador web FullStack</p>
+                <p className='info'>Desarrollador Web Frontend</p>
                 <Link to='/contact' className='contact_btn'>Contactame</Link>
                 <div className='home__buttons'>
                     <a href='https://github.com/mati-diaz' target='_blank' rel='noreferrer'>
