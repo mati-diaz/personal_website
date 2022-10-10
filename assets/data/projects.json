@@ -1,0 +1,34 @@
+[
+    {
+        "title": "BlogApp",
+        "description": "Aplicación web que cuenta con autenticación de usuarios mediante JWT y subida de imagenes en AWS-S3. Los usuarios pueden tener sus propios blogs y crear publicaciones que luego pueden ser compartidas al público, además los usuarios pueden crear comentarios en las publicaciones de otras personas.",
+        "stack": ["React", "Sass", "Redux", "Node.Js", "MongoDB", "Express"],
+        "img": "blogapp",
+        "github": "https://github.com/mati-diaz/blog-app-frontend",
+        "website": "https://blog-app-gold.vercel.app/"
+    },
+    {
+        "title": "Get The Lyrics",
+        "description": "Sitio web creado para buscar letras de canciones usando una api publica. Para estilizar este proyecto use styled components.",
+        "stack": ["React", "JavaScript", "CSS3"],
+        "img": "lyrics",
+        "github": "https://github.com/mati-diaz/get-the-lyrics",
+        "website": "https://get-the-lyrics.vercel.app/"
+    },
+    {
+        "title": "Landing Page",
+        "description": "Sitio web creado para practicar HTML5, CSS3 y JavaScript, muestra la información de una tienda de chocolates ficticia.",
+        "stack": ["HTML5", "CSS3", "JavaScript"],
+        "img": "nevicare",
+        "github": "https://github.com/mati-diaz/Nevicare",
+        "website": "https://nevicare.vercel.app/"
+    },
+    {
+        "title": "Mi Portafolio",
+        "description": "Mi sitio web personal, aqui publico los proyectos en los que trabajo, en constante actualización.",
+        "stack": ["React", "CSS3", "JavaScript"],
+        "img": "portfolio",
+        "github": "https://github.com/mati-diaz/portfolio",
+        "website": "https://portfolio-mdr.vercel.app/"
+    }
+]
