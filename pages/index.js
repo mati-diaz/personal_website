@@ -25,7 +25,7 @@ export default function HomePage() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <Image src={github_logo} width={30} height={30} />
+                        <Image src={github_logo} width={30} height={30} alt='Github Logo' />
                         GitHub
                     </a>
                     <a
@@ -33,14 +33,13 @@ export default function HomePage() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <Image src={linkedin_logo} width={30} height={30} />
+                        <Image src={linkedin_logo} width={30} height={30} alt='Linkedin Logo' />
                         Linkedin
                     </a>
                 </div>
             </div>
             <div className={styles.decoration}>
-                <Image src={decoration}  width={500} height={500} />
-                {/* <img className="home__img" src="/img/code.svg" alt="" /> */}
+                <Image src={decoration}  width={500} height={500} alt='' />
             </div>
         </div>
     );

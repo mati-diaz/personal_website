@@ -127,27 +127,27 @@ export default function ContactPage() {
             <div className={styles.contact}>
                 <div className={styles.extras}>
                     <a
-                        href="https://www.linkedin.com/in/mati-diaz/"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <Image src={linkedin_logo} width={30} height={30} />
-                        <p>Linkedin</p>
-                    </a>
-                    <a
                         href="https://github.com/mati-diaz"
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <Image src={github_logo} width={30} height={30} />
+                        <Image src={github_logo} width={30} height={30} alt='GitHub Logo' />
                         <p>GitHub</p>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/mati-diaz/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <Image src={linkedin_logo} width={30} height={30} alt='Linkedin Logo' />
+                        <p>Linkedin</p>
                     </a>
                     <a
                         href="mailto:matidiazruiz42@gmail.com"
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <Image src={mail_logo} width={30} height={30} />
+                        <Image src={mail_logo} width={30} height={30} alt='Mail Logo' />
                         <p>Correo</p>
                     </a>
                 </div>

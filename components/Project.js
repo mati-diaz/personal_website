@@ -35,13 +35,8 @@ export const Project = ({
 
     return (
         <div className={styles.project}>
-            {/* <img
-                alt="project img"
-                className={styles.project__img}
-                src={'./img/' + projectImg + '.png'}
-            /> */}
             <div className={styles.project__image}>
-                <Image src={projectImage} layout='intrinsic' />
+                <Image src={projectImage} layout='intrinsic' alt='Proyect Image' />
             </div>
             <div className={styles.project__info}>
                 <h3>{title}</h3>
@@ -53,11 +48,11 @@ export const Project = ({
                 <p>{description}</p>
                 <div className={styles.buttons}>
                     <a href={github} target="_blank" rel="noreferrer">
-                        <Image src={github_logo} height={24} width={24} />
+                        <Image src={github_logo} height={24} width={24} alt='Proyect Image' />
                         Repositorio
                     </a>
                     <a href={website} target="_blank" rel="noreferrer">
-                        <Image src={linkedin_logo} height={24} width={24} />
+                        <Image src={linkedin_logo} height={24} width={24} alt='Proyect Image' />
                         Sitio Web
                     </a>
                 </div>

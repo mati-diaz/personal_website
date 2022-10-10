@@ -21,25 +21,25 @@ export const NavBar = () => {
             <ul className={styles.items}>
                 <Link className={activeLink} href="/">
                     <div className={styles.item}>
-                        <Image src={home_logo} width={25} height={25} />
+                        <Image src={home_logo} width={25} height={25} alt='Home' />
                         <p className="nav_item_text">Inicio</p>
                     </div>
                 </Link>
                 <Link className={activeLink} href="/about">
                     <div className={styles.item}>
-                        <Image src={person_logo} width={25} height={25} />
+                        <Image src={person_logo} width={25} height={25} alt='About' />
                         <p className="nav_item_text">Sobre Mi</p>
                     </div>
                 </Link>
                 <Link className={activeLink} href="/projects">
                     <div className={styles.item}>
-                        <Image src={work_logo} width={25} height={25} />
+                        <Image src={work_logo} width={25} height={25} alt='Projects' />
                         <p className="nav_item_text">Proyectos</p>
                     </div>
                 </Link>
                 <Link className={activeLink} href="/contact">
                     <div className={styles.item}>
-                        <Image src={mail_logo} width={25} height={25} />
+                        <Image src={mail_logo} width={25} height={25} alt='Contact' />
                         <p className="nav_item_text">Contacto</p>
                     </div>
                 </Link>
