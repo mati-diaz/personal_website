@@ -5,6 +5,7 @@ import styles from '../styles/pages/Contact.module.css';
 import github_logo from '../assets/images/icons/github.png';
 import linkedin_logo from '../assets/images/icons/linkedin.png';
 import mail_logo from '../assets/images/icons/email.png';
+import Head from 'next/head';
 
 export default function ContactPage() {
     const [state, setState] = useState({
@@ -100,6 +101,9 @@ export default function ContactPage() {
 
     return (
         <div>
+            <Head>
+                <title>Matias Diaz Ruiz - Contacto</title>
+            </Head>
             {(nameMissing || emailMissing || messageMissing) && (
                 <p className="animate__animated animate__zoomIn msg msg__danger">
                     Faltan campos por completar
@@ -131,7 +135,12 @@ export default function ContactPage() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <Image src={github_logo} width={30} height={30} alt='GitHub Logo' />
+                        <Image
+                            src={github_logo}
+                            width={30}
+                            height={30}
+                            alt="GitHub Logo"
+                        />
                         <p>GitHub</p>
                     </a>
                     <a
@@ -139,7 +148,12 @@ export default function ContactPage() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <Image src={linkedin_logo} width={30} height={30} alt='Linkedin Logo' />
+                        <Image
+                            src={linkedin_logo}
+                            width={30}
+                            height={30}
+                            alt="Linkedin Logo"
+                        />
                         <p>Linkedin</p>
                     </a>
                     <a
@@ -147,7 +161,12 @@ export default function ContactPage() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <Image src={mail_logo} width={30} height={30} alt='Mail Logo' />
+                        <Image
+                            src={mail_logo}
+                            width={30}
+                            height={30}
+                            alt="Mail Logo"
+                        />
                         <p>Correo</p>
                     </a>
                 </div>
@@ -180,10 +199,7 @@ export default function ContactPage() {
                         onChange={handleInputChange}
                     ></textarea>
                     <div className="center">
-                        <button
-                            type="submit"
-                            disabled={state.submitting}
-                        >
+                        <button type="submit" disabled={state.submitting}>
                             Enviar
                         </button>
                     </div>

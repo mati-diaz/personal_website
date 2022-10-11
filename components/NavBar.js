@@ -14,34 +14,54 @@ export const NavBar = () => {
     return (
         <nav className={styles.navbar}>
             <Link href="/">
-                <div className={styles.logo}>
-                    <p>m</p>
-                </div>
+                <a className={styles.logo}>
+                    <p>{'</>'}</p>
+                </a>
             </Link>
             <ul className={styles.items}>
                 <Link className={activeLink} href="/">
-                    <div className={styles.item}>
-                        <Image src={home_logo} width={25} height={25} alt='Home' />
+                    <a className={styles.item}>
+                        <Image
+                            src={home_logo}
+                            width={25}
+                            height={25}
+                            alt="Home"
+                        />
                         <p className="nav_item_text">Inicio</p>
-                    </div>
+                    </a>
                 </Link>
                 <Link className={activeLink} href="/about">
-                    <div className={styles.item}>
-                        <Image src={person_logo} width={25} height={25} alt='About' />
+                    <a className={styles.item}>
+                        <Image
+                            src={person_logo}
+                            width={25}
+                            height={25}
+                            alt="About"
+                        />
                         <p className="nav_item_text">Sobre Mi</p>
-                    </div>
+                    </a>
                 </Link>
                 <Link className={activeLink} href="/projects">
-                    <div className={styles.item}>
-                        <Image src={work_logo} width={25} height={25} alt='Projects' />
+                    <a className={styles.item}>
+                        <Image
+                            src={work_logo}
+                            width={25}
+                            height={25}
+                            alt="Projects"
+                        />
                         <p className="nav_item_text">Proyectos</p>
-                    </div>
+                    </a>
                 </Link>
                 <Link className={activeLink} href="/contact">
-                    <div className={styles.item}>
-                        <Image src={mail_logo} width={25} height={25} alt='Contact' />
+                    <a className={styles.item}>
+                        <Image
+                            src={mail_logo}
+                            width={25}
+                            height={25}
+                            alt="Contact"
+                        />
                         <p className="nav_item_text">Contacto</p>
-                    </div>
+                    </a>
                 </Link>
             </ul>
         </nav>

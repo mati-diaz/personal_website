@@ -5,10 +5,14 @@ import styles from '../styles/pages/Home.module.css';
 import decoration from '../assets/images/others/code.svg';
 import github_logo from '../assets/images/icons/github.png';
 import linkedin_logo from '../assets/images/icons/linkedin.png';
+import Head from 'next/head';
 
 export default function HomePage() {
     return (
         <div className={styles.home}>
+            <Head>
+                <title>Matias Diaz Ruiz - Inicio</title>
+            </Head>
             <div className={styles.content}>
                 <h1>
                     Matias
@@ -25,7 +29,12 @@ export default function HomePage() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <Image src={github_logo} width={30} height={30} alt='Github Logo' />
+                        <Image
+                            src={github_logo}
+                            width={30}
+                            height={30}
+                            alt="Github Logo"
+                        />
                         GitHub
                     </a>
                     <a
@@ -33,13 +42,18 @@ export default function HomePage() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <Image src={linkedin_logo} width={30} height={30} alt='Linkedin Logo' />
+                        <Image
+                            src={linkedin_logo}
+                            width={30}
+                            height={30}
+                            alt="Linkedin Logo"
+                        />
                         Linkedin
                     </a>
                 </div>
             </div>
             <div className={styles.decoration}>
-                <Image src={decoration}  width={500} height={500} alt='' />
+                <Image src={decoration} width={500} height={500} alt="" />
             </div>
         </div>
     );

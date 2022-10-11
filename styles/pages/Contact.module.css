@@ -26,7 +26,8 @@
     gap: 20px;
 }
 
-.form input, .form textarea {
+.form input,
+.form textarea {
     font-family: 'Open Sans', sans-serif;
     background-color: rgb(88, 88, 88);
     outline: none;
@@ -40,7 +41,7 @@
     background-position-x: center;
     background-size: 0% 100%;
     transition-property: background-size;
-    transition-duration: .5s;
+    transition-duration: 0.5s;
 }
 
 .form input {
@@ -61,14 +62,14 @@
     );
 }
 
-.form input:focus, .form textarea:focus {
+.form input:focus,
+.form textarea:focus {
     background-size: 100% 100%;
 }
 
 .form input:last-of-type {
     margin-right: 0;
 }
-
 
 .form textarea {
     resize: none;
@@ -112,8 +113,8 @@
     background-color: rgb(39, 39, 39);
     border: 1px solid rgb(59, 59, 59);
     transition-property: background-color;
-    transition-duration: .5s;
-} 
+    transition-duration: 0.5s;
+}
 
 .extras a:hover {
     background-color: #00a1fb;
@@ -164,7 +165,7 @@
     .extra a {
         min-width: 0px;
         width: 100%;
-    } 
+    }
     .icon {
         height: 30px;
     }

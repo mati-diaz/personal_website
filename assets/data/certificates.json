@@ -1,22 +1,22 @@
 [
-  {
-    "name": "Aceleración en NodeJs",
-    "img": "alkemy",
-    "link": "https://assets.alkemy.org/certificates/auth0%7C613b7668cbd2700069f8ca40/483a66cb-d74f-433a-a551-02df6e1767d8.pdf"
-  },
-  {
-    "name": "React",
-    "img": "udemy",
-    "link": "https://www.udemy.com/certificate/UC-1df06295-afed-422d-a93c-26460ae1efd3/"
-  },
-  {
-    "name": "NodeJs",
-    "img": "udemy",
-    "link": "https://www.udemy.com/certificate/UC-4954054a-9dec-4415-92a4-40a18337a188/"
-  },
-  {
-    "name": "Git + GitHub",
-    "img": "udemy",
-    "link": "https://www.udemy.com/certificate/UC-c54a7334-791d-44da-9dd7-ad89e6db39d1/"
-  }
+    {
+        "name": "Aceleración en NodeJs",
+        "img": "alkemy",
+        "link": "https://assets.alkemy.org/certificates/auth0%7C613b7668cbd2700069f8ca40/483a66cb-d74f-433a-a551-02df6e1767d8.pdf"
+    },
+    {
+        "name": "React",
+        "img": "udemy",
+        "link": "https://www.udemy.com/certificate/UC-1df06295-afed-422d-a93c-26460ae1efd3/"
+    },
+    {
+        "name": "NodeJs",
+        "img": "udemy",
+        "link": "https://www.udemy.com/certificate/UC-4954054a-9dec-4415-92a4-40a18337a188/"
+    },
+    {
+        "name": "Git + GitHub",
+        "img": "udemy",
+        "link": "https://www.udemy.com/certificate/UC-c54a7334-791d-44da-9dd7-ad89e6db39d1/"
+    }
 ]

@@ -19,7 +19,7 @@ import express_logo from '../assets/images/stack/express.png';
 import alkemy_logo from '../assets/images/others/alkemy.jpg';
 import udemy_logo from '../assets/images/others/udemy.jpg';
 import link_logo from '../assets/images/icons/link.png';
-
+import Head from 'next/head';
 
 export default function AboutPage() {
     const getImage = (name) => {
@@ -59,6 +59,9 @@ export default function AboutPage() {
 
     return (
         <div>
+            <Head>
+                <title>Matias Diaz Ruiz - Sobre</title>
+            </Head>
             <h2 className="subtitle">Sobre Mí</h2>
             <div className={styles.about}>
                 <p className={styles.info}>
@@ -107,7 +110,12 @@ export default function AboutPage() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <Image src={link_logo} height={25} width={25} alt='Abrir' />
+                                    <Image
+                                        src={link_logo}
+                                        height={25}
+                                        width={25}
+                                        alt="Abrir"
+                                    />
                                 </a>
                             </li>
                         ))}

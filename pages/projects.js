@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import projects from '../assets/data/projects.json';
 import { Project } from '../components/Project';
 import styles from '../styles/pages/Projects.module.css';
@@ -5,6 +6,9 @@ import styles from '../styles/pages/Projects.module.css';
 export default function ProjectsPage() {
     return (
         <div>
+            <Head>
+                <title>Matias Diaz Ruiz - Proyectos</title>
+            </Head>
             <h2 className="subtitle">Proyectos</h2>
             <div className={styles.projects}>
                 {projects.map((project) => (

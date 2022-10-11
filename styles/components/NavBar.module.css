@@ -22,18 +22,18 @@
 }
 
 .logo p {
-    font-size: 98px;
+    font-size: 38px;
     font-weight: 800;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0px;
-    /* border: 10px solid white; */
-    /* border-radius: 100%; */
+    border: 10px solid white;
+    border-radius: 100%;
     width: 95px;
     height: 95px;
-    text-shadow: -6px 0px #00a1fb;
+    /* text-shadow: -6px 0px #00a1fb; */
 }
 
 .items {
@@ -54,7 +54,7 @@
     padding: 20px 0;
     height: 100%;
     transition-property: background-size;
-    transition-duration: .3s;
+    transition-duration: 0.3s;
 
     background-image: linear-gradient(
         #00a1fb 0%,
