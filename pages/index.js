@@ -19,7 +19,7 @@ export default function HomePage() {
                     <br />
                     Diaz Ruiz
                 </h1>
-                <p>Desarrollador Web Frontend</p>
+                <p>Desarrollador Web FullStack</p>
                 <Link href="/contact">
                     <button className={styles.contact}>Contactame</button>
                 </Link>
