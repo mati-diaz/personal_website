@@ -1,0 +1,95 @@
+.form {
+    background-color: rgb(32, 32, 32);
+    border-radius: 5px;
+    padding: 30px 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.form label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.formField, .formFieldText {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formField input, .formFieldText textarea {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: rgb(64, 64, 64);
+    color: #fff;
+
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-size: 0% 100%;
+    transition-property: background-size;
+    transition-duration: 0.5s;
+
+    background-image: linear-gradient(
+        transparent 02%,
+        transparent 95%,
+        #00a1fb 95%,
+        #00a1fb 100%
+    );
+}
+
+.form input:focus,
+.form textarea:focus {
+    background-size: 100% 100%;
+}
+
+.formFieldText {
+    grid-column: span 2;
+}
+
+.formFieldText textarea {
+    height: 140px;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    background-color: #00a1fb;
+    color: #000;
+    max-width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    /* font-family: inherit */
+}
+
+.anothers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.anothers div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(32, 32, 32);
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.anothers img {
+    max-width: 30px;
+    height: auto;
+}

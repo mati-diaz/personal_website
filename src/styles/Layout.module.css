@@ -1,0 +1,10 @@
+.mainContent {
+    margin: 0 auto;
+    width: 90%;
+    /* max-width: 900px; */
+    max-width: var(--max-width);
+    padding-top: 75px;
+    padding-bottom: 20px;
+    min-height: 100vh;
+    position: relative;
+}

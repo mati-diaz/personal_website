@@ -1,0 +1,139 @@
+.stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.stack li {
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    background-color: rgb(32, 32, 32);
+    padding: 15px 0px;
+    border-radius: 5px;
+}
+
+.stack img {
+    height: auto;
+    width: 35px;
+}
+
+.experience {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 30px;
+    background-color: rgb(32, 32, 32);
+    padding: 15px 20px;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+
+.experience:last-of-type {
+    margin-bottom: 0;
+}
+
+.experienceDate {
+    text-align: right;
+    min-width: 280px;
+    padding-top: 10px;
+}
+
+.experienceDescription {
+    padding: 10px 0;
+    padding-left: 12px;
+    border-left: 3px solid #00a1fb;
+}
+
+.experienceTitle {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.experienceDescription li {
+    padding-left: 15px;
+    position: relative;
+}
+
+.experienceDescription li::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 8px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: #fff;
+    color: #fff;
+}
+
+.certificates {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.certificate {
+    padding: 10px 20px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid rgb(59, 59, 59); */
+    background-color: rgb(32, 32, 32);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.certificate svg {
+    max-width: 25px;
+    height: auto;
+    fill: #fff;
+    transition-property: fill;
+    transition-duration: .2s;
+}
+
+.certificate svg:hover {
+    fill: #00a1fb;
+}
+
+.certificate a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificate p {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-left: 3px solid #00a1fb;
+    padding-left: 12px;
+}
+
+@media (max-width: 600px) {
+    .stack img {
+        height: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    #about {
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about-content {
+        padding: 0px;
+    }
+    .stack-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .stack li {
+        gap: 10px;
+    }
+}

@@ -1,0 +1,88 @@
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.project {
+    padding: 15px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 5px;
+    /* border-top: 5px solid #00a1fb; */
+    /* display: flex; */
+    gap: 10px;
+    /* margin-bottom: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imageMain img {
+    /* max-width: 300px; */
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    user-select: none;
+    border: 5px solid #181818;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 700;
+    /* margin-bottom: 10px; */
+    /* text-align: center; */
+}
+
+.description {
+    font-size: 14px;
+    max-height: 50px;
+    overflow: hidden;
+}
+
+.projectContent {
+    position: relative;
+}
+
+.button {
+    background-color: inherit;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    border: 1px solid rgb(145, 145, 145);
+    cursor: pointer;
+    position: relative;
+    bottom: 0;
+}
+
+.button img {
+    max-width: 20px;
+    height: auto;
+}
+
+.button p {
+    color: white;
+    font-size: 16px;
+}
+
+.tags {
+    display: flex;
+    gap: 5px;
+    margin: 6px 0;
+}
+
+.tags p {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 1px 10px;
+    font-weight: 700;
+    font-size: 11px;
+    color: #000;
+}
