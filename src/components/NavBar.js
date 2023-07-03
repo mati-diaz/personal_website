@@ -12,7 +12,7 @@ export default function NavBar() {
         <nav className={styles.navbar}>
             <div className={styles.navContent}>
                 <Link href="/" className={styles.logo}>
-                    <Image alt='logo' width={410} height={410} src='/logo.svg' />
+                    <Image alt='logo' width={410} height={410} src='/images/logo.svg' />
                 </Link>
                 <ul className={styles.items}>
                     <li className={styles.item + ' ' + (activeNav('/'))}>

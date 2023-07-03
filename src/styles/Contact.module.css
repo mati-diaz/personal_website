@@ -1,24 +1,26 @@
 .form {
-    background-color: rgb(32, 32, 32);
+    background-color: var(--gray-2);
     border-radius: 5px;
     padding: 30px 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    gap: 10px;
 }
 
 .form label {
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 600;
 }
 
-.formField, .formFieldText {
+.formField,
+.formFieldText {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 }
 
-.formField input, .formFieldText textarea {
+.formField input,
+.formFieldText textarea {
     padding: 15px;
     border-radius: 5px;
     border: none;
@@ -26,9 +28,9 @@
     resize: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 16px;
-    background-color: rgb(64, 64, 64);
-    color: #fff;
+    font-size: 1rem;
+    background-color: var(--gray-3);
+    color: var(--light-1);
 
     background-repeat: no-repeat;
     background-position-x: left;
@@ -40,6 +42,15 @@
         transparent 02%,
         transparent 95%,
         #00a1fb 95%,
+        #00a1fb 100%
+    );
+}
+
+.formFieldText textarea {
+    background-image: linear-gradient(
+        transparent 02%,
+        transparent 98%,
+        #00a1fb 98%,
         #00a1fb 100%
     );
 }
@@ -60,22 +71,21 @@
 .submit {
     border: none;
     outline: none;
-    background-color: #00a1fb;
-    color: #000;
+    background-color: var(--blue-1);
+    color: var(--gray-1);
     max-width: 200px;
     border-radius: 5px;
-    padding: 10px;
-    margin-top: 5px;
+    padding: 10px 50px;
     cursor: pointer;
-    font-size: 18px;
-    font-weight: 700;
-    /* font-family: inherit */
+    font-size: 1.2rem;
+    font-weight: 800;
 }
 
 .anothers {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 10px;
 }
 
 .anothers div {
@@ -83,7 +93,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    background-color: rgb(32, 32, 32);
+    background-color: var(--gray-2);
     padding: 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -92,4 +102,60 @@
 .anothers img {
     max-width: 30px;
     height: auto;
+}
+
+.missing {
+    outline: 1px solid rgb(255, 124, 48) !important;
+}
+
+.missing:focus {
+    outline: none !important;
+}
+
+.footerForm {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerForm img {
+    width: 30px;
+    height: auto;
+    filter: invert(1);
+}
+
+.loading {
+    animation: rotate 2s linear infinite;
+}
+
+.success,
+.fail {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (width < 768px) {
+    .formField {
+        grid-column: span 2;
+    }
+}
+
+@media (width < 576px) {
+    .success p,
+    .fail p {
+        display: none;
+    }
 }

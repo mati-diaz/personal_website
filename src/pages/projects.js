@@ -8,116 +8,125 @@ export default function Projects() {
         <>
             <ScrollToTop />
 
-            <Head>
-                <title>Matias Diaz - Projects</title>
-            </Head>
             <main className={styles.main}>
                 <h1 className="title">Proyectos</h1>
-                
+
                 <div className={styles.projects}>
                     <div className={styles.project}>
                         <div>
                             <div className={styles.imageMain}>
-                                <Image src='/projects/blogapp.png' width={1000} height={1000} alt='Project Image' placeholder='empty' priority />
+                                <Image
+                                    src="/images/projects/pr-3.jpg"
+                                    width={1000}
+                                    height={1000}
+                                    alt="Project Image"
+                                    placeholder="empty"
+                                    priority
+                                />
                             </div>
-                            <div>
-                                <p className={styles.title}>Test title for my app</p>
+                            <div className={styles.body}>
+                                <p className={styles.title}>Blog App</p>
                                 <div className={styles.tags}>
-                                    <p>PHP</p>
-                                    <p>MySQL</p>
-                                    <p>Symfony</p>
+                                    <p>Express</p>
+                                    <p>NodeJs</p>
+                                    <p>MongoDB</p>
+                                    <p>AWS S3</p>
                                 </div>
-                                <p className={styles.description}>Laborum laboris sit qui veniam aliquip labore cillum enim culpa tempor. Irure dolor occaecat et occaecat nisi occaecat duis laborum incididunt amet voluptate. Nisi duis cillum laboris consequat laboris nulla dolor nulla.</p>
                             </div>
                         </div>
-                        <button className={styles.button}>
-                            <Image src='/socials/github.png' width={50} height={50} alt='GitHub Logo' />
-                            <p>Ver</p>
-                        </button>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://github.com/mati-diaz/blog-app-backend"
+                        >
+                            <button className={styles.button}>
+                                <Image
+                                    src="/images/socials/github.png"
+                                    width={50}
+                                    height={50}
+                                    alt="GitHub Logo"
+                                />
+                                <p>Ver Codigo</p>
+                            </button>
+                        </a>
                     </div>
 
                     <div className={styles.project}>
                         <div>
                             <div className={styles.imageMain}>
-                                <Image src='/projects/blogapp.png' width={1000} height={1000} alt='Project Image' placeholder='empty' priority />
+                                <Image
+                                    src="/images/projects/pr-5.jpg"
+                                    width={1000}
+                                    height={1000}
+                                    alt="Project Image"
+                                    placeholder="empty"
+                                    priority
+                                />
                             </div>
-                            <div>
-                                <p className={styles.title}>Test title for my app</p>
+                            <div className={styles.body}>
+                                <p className={styles.title}>API ONG</p>
                                 <div className={styles.tags}>
-                                    <p>PHP</p>
+                                    <p>NodeJs</p>
+                                    <p>Express</p>
                                     <p>MySQL</p>
-                                    <p>Symfony</p>
+                                    <p>AWS S3</p>
+                                    <p>Sequelize</p>
                                 </div>
-                                <p className={styles.description}>Laborum laboris sit qui veniam aliquip labore cillum enim culpa tempor. Irure dolor occaecat et occaecat nisi occaecat duis laborum incididunt amet voluptate. Nisi duis cillum laboris consequat laboris nulla dolor nulla.</p>
                             </div>
                         </div>
-                        <button className={styles.button}>
-                            <Image src='/socials/github.png' width={50} height={50} alt='GitHub Logo' />
-                            <p>Ver</p>
-                        </button>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://github.com/alkemyTech/OT-95-Server"
+                        >
+                            <button className={styles.button}>
+                                <Image
+                                    src="/images/socials/github.png"
+                                    width={50}
+                                    height={50}
+                                    alt="GitHub Logo"
+                                />
+                                <p>Ver Codigo</p>
+                            </button>
+                        </a>
                     </div>
 
                     <div className={styles.project}>
                         <div>
                             <div className={styles.imageMain}>
-                                <Image src='/projects/blogapp.png' width={1000} height={1000} alt='Project Image' placeholder='empty' priority />
+                                <Image
+                                    src="/images/projects/nevicare.png"
+                                    width={1000}
+                                    height={1000}
+                                    alt="Project Image"
+                                    placeholder="empty"
+                                    priority
+                                />
                             </div>
-                            <div>
-                                <p className={styles.title}>Test title for my app</p>
+                            <div className={styles.body}>
+                                <p className={styles.title}>Landing Page</p>
                                 <div className={styles.tags}>
-                                    <p>PHP</p>
-                                    <p>MySQL</p>
-                                    <p>Symfony</p>
+                                    <p>HTML5</p>
+                                    <p>CSS3</p>
+                                    <p>JavaScript</p>
                                 </div>
-                                <p className={styles.description}>Laborum laboris sit qui veniam aliquip labore cillum enim culpa tempor. Irure dolor occaecat et occaecat nisi occaecat duis laborum incididunt amet voluptate. Nisi duis cillum laboris consequat laboris nulla dolor nulla.</p>
                             </div>
                         </div>
-                        <button className={styles.button}>
-                            <Image src='/socials/github.png' width={50} height={50} alt='GitHub Logo' />
-                            <p>Ver</p>
-                        </button>
-                    </div>
-
-                    <div className={styles.project}>
-                        <div>
-                            <div className={styles.imageMain}>
-                                <Image src='/projects/blogapp.png' width={1000} height={1000} alt='Project Image' placeholder='empty' priority />
-                            </div>
-                            <div>
-                                <p className={styles.title}>Test title for my app</p>
-                                <div className={styles.tags}>
-                                    <p>PHP</p>
-                                    <p>MySQL</p>
-                                    <p>Symfony</p>
-                                </div>
-                                <p className={styles.description}>Laborum laboris sit qui veniam aliquip labore cillum enim culpa tempor. Irure dolor occaecat et occaecat borum laboris sit qui veniam aliquip labore cillum enim culpa tempor. Irure dolor occaecat et occaecat borum laboris sit qui veniam aliquip labore cillum enim culpa tempor. Irure dolor occaecat et occaecat nisi occaecat duis laborum incididunt amet voluptate. Nisi duis cillum laboris consequat laboris nulla dolor nulla.</p>
-                            </div>
-                        </div>
-                        <button className={styles.button}>
-                            <Image src='/socials/github.png' width={50} height={50} alt='GitHub Logo' />
-                            <p>Ver</p>
-                        </button>
-                    </div>
-
-                    <div className={styles.project}>
-                        <div>
-                            <div className={styles.imageMain}>
-                                <Image src='/projects/blogapp.png' width={1000} height={1000} alt='Project Image' placeholder='empty' priority />
-                            </div>
-                            <div>
-                                <p className={styles.title}>Test title for my app</p>
-                                <div className={styles.tags}>
-                                    <p>PHP</p>
-                                    <p>MySQL</p>
-                                    <p>Symfony</p>
-                                </div>
-                                <p className={styles.description}>laboris consequat laboris nulla dolor nulla.</p>
-                            </div>
-                        </div>
-                        <button className={styles.button}>
-                            <Image src='/socials/github.png' width={50} height={50} alt='GitHub Logo' />
-                            <p>Ver</p>
-                        </button>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://github.com/mati-diaz/Nevicare"
+                        >
+                            <button className={styles.button}>
+                                <Image
+                                    src="/images/socials/github.png"
+                                    width={50}
+                                    height={50}
+                                    alt="GitHub Logo"
+                                />
+                                <p>Ver Codigo</p>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </main>

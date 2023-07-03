@@ -10,7 +10,7 @@
     <defs>
         <style>
             .svg-fill-primary {
-                fill: #ffffff;
+                fill: #181818;
             }
 
             .svg-fill-secondary {
@@ -22,7 +22,7 @@
             }
 
             .svg-stroke-primary {
-                stroke: #ffffff;
+                stroke: #181818;
             }
 
             .svg-stroke-secondary {
@@ -39,13 +39,13 @@
         <circle cx="50" cy="50" r="50"></circle>
     </clipPath>
 
-    <circle 
+    <circle
             class="svg-fill-tertiary"
             cx="50"
             cy="50"
             r="50">
     </circle>
-    <circle 
+    <circle
             class="svg-fill-secondary svg-builder-circle"
             cx="50"
             cy="50"
@@ -53,7 +53,7 @@
     </circle>
 
     <g transform="translate(12.50, 12.50) scale(0.75, 0.75)">
-        
+
     <path d="M43.6,75.7,56.4,24.3M69.3,37.2,82.1,50,69.3,62.8m-38.6,0L17.9,50,30.7,37.2" fill="none"
       class="svg-stroke-primary"
       stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>

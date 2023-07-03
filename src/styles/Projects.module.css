@@ -1,65 +1,76 @@
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 20px;
 }
 
 .project {
-    padding: 15px;
-    background-color: rgb(32, 32, 32);
+    background-color: var(--gray-2);
     border-radius: 5px;
-    /* border-top: 5px solid #00a1fb; */
-    /* display: flex; */
-    gap: 10px;
-    /* margin-bottom: 10px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.imageMain img {
-    /* max-width: 300px; */
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    user-select: none;
-    border: 5px solid #181818;
-}
-
-.title {
-    font-size: 18px;
-    font-weight: 700;
-    /* margin-bottom: 10px; */
-    /* text-align: center; */
-}
-
-.description {
-    font-size: 14px;
-    max-height: 50px;
     overflow: hidden;
 }
 
-.projectContent {
-    position: relative;
+.imageMain {
+    overflow: hidden;
+}
+
+.imageMain img {
+    max-height: 170px;
+    min-height: 160px;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    object-fit: cover;
+}
+
+.body {
+    padding: 15px;
+    padding-top: 10px;
+}
+
+.title {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 1rem;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 6px 0;
+}
+
+.tags p {
+    background-color: var(--blue-1);
+    border-radius: 20px;
+    padding: 1px 10px;
+    font-weight: 700;
+    font-size: .7rem;
+    color: var(--gray-2);
 }
 
 .button {
     background-color: inherit;
-    display: flex;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 10px;
-    padding: 8px;
-    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
     border: none;
-    outline: none;
-    margin-top: 15px;
-    border: 1px solid rgb(145, 145, 145);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 0;
+    border: 1px solid var(--gray-3);
+    border-radius: 50px;
     cursor: pointer;
-    position: relative;
-    bottom: 0;
 }
 
 .button img {
@@ -67,22 +78,15 @@
     height: auto;
 }
 
-.button p {
-    color: white;
-    font-size: 16px;
+
+@media (width < 768px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-.tags {
-    display: flex;
-    gap: 5px;
-    margin: 6px 0;
-}
-
-.tags p {
-    background-color: #fff;
-    border-radius: 20px;
-    padding: 1px 10px;
-    font-weight: 700;
-    font-size: 11px;
-    color: #000;
+@media (width < 576px) {
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
