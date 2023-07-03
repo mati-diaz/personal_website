@@ -26,7 +26,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/coloured/php.svg"
+                            src="/images/stack/Coloured/php.svg"
                             alt="Php Logo"
                         />
                         <p>PHP</p>
@@ -35,7 +35,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/coloured/symfony.svg"
+                            src="/images/stack/Coloured/symfony.svg"
                             alt="Symfony Logo"
                         />
                         <p>Symfony</p>
@@ -44,7 +44,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/coloured/nodejs.svg"
+                            src="/images/stack/Coloured/nodejs.svg"
                             alt="NodeJs Logo"
                         />
                         <p>NodeJs</p>
@@ -53,7 +53,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/coloured/express.svg"
+                            src="/images/stack/Coloured/express.svg"
                             alt="Express Logo"
                         />
                         <p>Express</p>
@@ -62,7 +62,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/coloured/mysql.svg"
+                            src="/images/stack/Coloured/mysql.svg"
                             alt="MySql Logo"
                         />
                         <p>MySql</p>
@@ -71,7 +71,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/coloured/mongodb.svg"
+                            src="/images/stack/Coloured/mongodb.svg"
                             alt="Mongo Logo"
                         />
                         <p>MongoDB</p>
@@ -80,7 +80,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/coloured/git.svg"
+                            src="/images/stack/Coloured/git.svg"
                             alt="Git Logo"
                         />
                         <p>Git</p>
@@ -89,7 +89,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/coloured/html.svg"
+                            src="/images/stack/Coloured/html.svg"
                             alt="HTML5 Logo"
                         />
                         <p>HTML5</p>
@@ -98,7 +98,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/coloured/css.svg"
+                            src="/images/stack/Coloured/css.svg"
                             alt="CSS3 Logo"
                         />
                         <p>CSS3</p>
@@ -107,7 +107,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/coloured/javascript.svg"
+                            src="/images/stack/Coloured/javascript.svg"
                             alt="JavaScript Logo"
                         />
                         <p>JavaScript</p>
@@ -117,7 +117,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/coloured/nextjs.svg"
+                            src="/images/stack/Coloured/nextjs.svg"
                             alt="NextJs Logo"
                         />
                         <p>NextJs</p>
@@ -127,7 +127,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/coloured/reactjs.svg"
+                            src="/images/stack/Coloured/reactjs.svg"
                             alt="React Logo"
                         />
                         <p>React</p>
@@ -136,7 +136,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/coloured/redux.svg"
+                            src="/images/stack/Coloured/redux.svg"
                             alt="Redux Logo"
                         />
                         <p>Redux</p>
@@ -145,7 +145,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/coloured/sass.svg"
+                            src="/images/stack/Coloured/sass.svg"
                             alt="Sass Logo"
                         />
                         <p>Sass</p>
