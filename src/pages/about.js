@@ -164,7 +164,7 @@ export default function About() {
                         </div>
 
                         <a
-                            href="https://assets.alkemy.org/certificates/auth0%7C613b7668cbd2700069f8ca100/483a66cb-d74f-433a-a551-02df6e1767d8.pdf"
+                            href="https://assets.alkemy.org/certificates/auth0|613b7668cbd2700069f8ca40/ACCELERATION_CERTIFICATE/c2e7ec06-d80c-4a0d-91be-cae34e4d492a.png"
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -186,7 +186,7 @@ export default function About() {
                         </div>
 
                         <a
-                            href="https://www.udemy.com/certificate/UC-1df06295-afed-422d-a93c-26460ae1efd3/"
+                            href="http://ude.my/UC-1df06295-afed-422d-a93c-26460ae1efd3"
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -208,7 +208,7 @@ export default function About() {
                         </div>
 
                         <a
-                            href="https://www.udemy.com/certificate/UC-49510054a-9dec-4415-92a4-100a18337a188/"
+                            href="http://ude.my/UC-4954054a-9dec-4415-92a4-40a18337a188"
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -230,7 +230,7 @@ export default function About() {
                         </div>
 
                         <a
-                            href="https://www.udemy.com/certificate/UC-c54a7334-791d-44da-9dd7-ad89e6db39d1/"
+                            href="http://ude.my/UC-c54a7334-791d-44da-9dd7-ad89e6db39d1"
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -252,7 +252,7 @@ export default function About() {
                         </div>
 
                         <a
-                            href="https://www.udemy.com/certificate/UC-f94dd86f-ffad-4a68-8099-2cd235f6c92c/"
+                            href="http://ude.my/UC-f94dd86f-ffad-4a68-8099-2cd235f6c92c"
                             target="_blank"
                             rel="noreferrer"
                         >
