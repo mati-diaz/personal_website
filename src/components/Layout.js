@@ -4,16 +4,16 @@ import styles from '@/styles/Layout.module.css';
 import { Open_Sans } from 'next/font/google';
 import { AnimatePresence, motion } from 'framer-motion';
 
-// const pageTransition = {
-//     initial: {
-//         opacity: 0,
-//         innerHeight: 0,
-//     },
-//     animate: { opacity: 1 },
-//     exit: {
-//         opacity: 0,
-//     },
-// };
+const pageTransition = {
+    initial: {
+        opacity: 0,
+        innerHeight: 0,
+    },
+    animate: { opacity: 1 },
+    exit: {
+        opacity: 0,
+    },
+};
 
 const openSans = Open_Sans({ subsets: ['latin'] });
 
@@ -33,9 +33,9 @@ export default function Layout({ children, route }) {
             <div className={openSans.className}>
                 <NavBar />
 
-                <div className={styles.mainContent}>{children}</div>
+                {/* <div className={styles.mainContent}>{children}</div> */}
 
-                {/* <AnimatePresence mode="wait">
+                <AnimatePresence mode="wait">
                     <motion.div
                         key={route}
                         initial="initial"
@@ -47,7 +47,7 @@ export default function Layout({ children, route }) {
                     >
                         {children}
                     </motion.div>
-                </AnimatePresence> */}
+                </AnimatePresence>
             </div>
         </>
     );

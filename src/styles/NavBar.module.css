@@ -60,7 +60,7 @@
     border-top: 1px solid transparent;
     transition-property: background-color;
     transition-duration: 0.5s;
-    border-radius: 50px;
+    border-radius: 5px;
     width: min-content;
     min-width: 150px;
     cursor: pointer;
@@ -78,6 +78,7 @@
 
 .activeNav a {
     color: var(--blue-1);
+    background-color: var(--gray-2);
 }
 
 .activeNav svg {

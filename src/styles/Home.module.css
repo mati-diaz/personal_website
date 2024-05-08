@@ -30,7 +30,7 @@
 
 .description {
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 300;
     margin-top: 10px;
     margin-bottom: 30px;
     font-family: 'Montserrat', sans-serif;
@@ -47,7 +47,7 @@
     width: 100%;
     cursor: pointer;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .contact:hover {
@@ -86,7 +86,7 @@
     background-position-x: left;
     transition: background-size 0.2s;
     transition-timing-function: linear;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .buttons a:hover {
