@@ -1,13 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '@/styles/Home.module.css';
-import ScrollToTop from '@/components/ScrollToTop';
 
 export default function Home() {
     return (
         <>
-            <ScrollToTop />
-
             <div className={styles.home}>
                 <main className={styles.main}>
                     <h1 className={styles.name}>

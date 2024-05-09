@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from '@/styles/Contact.module.css';
-import ScrollToTop from '@/components/ScrollToTop';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 export default function Contact() {
     const [state, setState] = useState({
@@ -117,14 +117,21 @@ export default function Contact() {
         }, 3000);
     };
 
+    const item = {
+        hidden: { opacity: 0 },
+        show: { opacity: 1 },
+    };
+
     return (
         <>
-            <ScrollToTop />
-
             <main className={styles.main}>
                 <h1 className="title">Contacto</h1>
 
-                <form className={styles.form} onSubmit={handleSubmit}>
+                <motion.form
+                    variants={item}
+                    className={styles.form}
+                    onSubmit={handleSubmit}
+                >
                     <div className={styles.formField}>
                         <label htmlFor="name">Nombre</label>
                         <input
@@ -217,12 +224,13 @@ export default function Contact() {
                             </div>
                         )}
                     </div>
-                </form>
+                </motion.form>
             </main>
 
             <section>
                 <div className={styles.anothers}>
-                    <a
+                    <motion.a
+                        variants={item}
                         target="_blank"
                         rel="noreferrer"
                         href="https://github.com/mati-diaz/"
@@ -236,8 +244,9 @@ export default function Contact() {
                             />
                             <p>GitHub</p>
                         </div>
-                    </a>
-                    <a
+                    </motion.a>
+                    <motion.a
+                        variants={item}
                         target="_blank"
                         rel="noreferrer"
                         href="https://www.linkedin.com/in/mati-diaz/"
@@ -251,9 +260,9 @@ export default function Contact() {
                             />
                             <p>Linkedin</p>
                         </div>
-                    </a>
+                    </motion.a>
 
-                    <a
+                    <motion.a variants={item}
                         target="_blank"
                         rel="noreferrer"
                         href="mailto:matias.dzrz@gmail.com"
@@ -267,7 +276,7 @@ export default function Contact() {
                             />
                             <p>Correo</p>
                         </div>
-                    </a>
+                    </motion.a>
                 </div>
             </section>
         </>

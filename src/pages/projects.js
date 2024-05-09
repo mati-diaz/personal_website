@@ -1,18 +1,21 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Projects.module.css';
-import ScrollToTop from '@/components/ScrollToTop';
+import { motion } from 'framer-motion';
 
 export default function Projects() {
+    const item = {
+        hidden: { opacity: 0 },
+        show: { opacity: 1 },
+    };
+
     return (
         <>
-            <ScrollToTop />
-
             <main className={styles.main}>
                 <h1 className="title">Proyectos</h1>
 
                 <div className={styles.projects}>
-                    <div className={styles.project}>
+                    <motion.div variants={item} className={styles.project}>
                         <div>
                             <div className={styles.imageMain}>
                                 <Image
@@ -49,9 +52,9 @@ export default function Projects() {
                                 <p>Ver Codigo</p>
                             </button>
                         </a>
-                    </div>
+                    </motion.div>
 
-                    <div className={styles.project}>
+                    <motion.div variants={item} className={styles.project}>
                         <div>
                             <div className={styles.imageMain}>
                                 <Image
@@ -89,9 +92,9 @@ export default function Projects() {
                                 <p>Ver Codigo</p>
                             </button>
                         </a>
-                    </div>
+                    </motion.div>
 
-                    <div className={styles.project}>
+                    <motion.div variants={item} className={styles.project}>
                         <div>
                             <div className={styles.imageMain}>
                                 <Image
@@ -127,7 +130,7 @@ export default function Projects() {
                                 <p>Ver Codigo</p>
                             </button>
                         </a>
-                    </div>
+                    </motion.div>
                 </div>
             </main>
         </>
