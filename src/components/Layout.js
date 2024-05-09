@@ -38,14 +38,13 @@ export default function Layout({ children, route }) {
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={route}
-                        initial="initial"
-                        animate="animate"
-                        exit="exit"
-                        variants={pageTransition}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
                         transition={{ duration: 0.2 }}
-                        className={styles.mainContent}
                     >
-                        {children}
+                        <div className={styles.mainContent}>{children}</div>
+                        {/* {children} */}
                     </motion.div>
                 </AnimatePresence>
             </div>

@@ -10,7 +10,7 @@ export default function About() {
             <main>
                 <h1 className="title">Sobre Mí</h1>
 
-                <p>
+                <p className={styles.presentation}>
                     Soy un desarrollador web fullstack de Argentina con enfoque
                     en el desarrollo backend. He trabajado en proyectos de gran
                     envergadura, donde he demostrado habilidades excepcionales
@@ -26,7 +26,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/Coloured/php.svg"
+                            src="/images/stack/White/php.svg"
                             alt="Php Logo"
                         />
                         <p>PHP</p>
@@ -35,7 +35,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/Coloured/symfony.svg"
+                            src="/images/stack/White/symfony.svg"
                             alt="Symfony Logo"
                         />
                         <p>Symfony</p>
@@ -44,7 +44,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/Coloured/nodejs.svg"
+                            src="/images/stack/White/nodejs.svg"
                             alt="NodeJs Logo"
                         />
                         <p>NodeJs</p>
@@ -53,7 +53,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/Coloured/express.svg"
+                            src="/images/stack/White/express.svg"
                             alt="Express Logo"
                         />
                         <p>Express</p>
@@ -62,7 +62,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/Coloured/mysql.svg"
+                            src="/images/stack/White/mysql.svg"
                             alt="MySql Logo"
                         />
                         <p>MySql</p>
@@ -71,7 +71,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/Coloured/mongodb.svg"
+                            src="/images/stack/White/mongodb.svg"
                             alt="Mongo Logo"
                         />
                         <p>MongoDB</p>
@@ -80,7 +80,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/Coloured/git.svg"
+                            src="/images/stack/White/git.svg"
                             alt="Git Logo"
                         />
                         <p>Git</p>
@@ -89,7 +89,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/Coloured/html.svg"
+                            src="/images/stack/White/html.svg"
                             alt="HTML5 Logo"
                         />
                         <p>HTML5</p>
@@ -98,7 +98,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/Coloured/css.svg"
+                            src="/images/stack/White/css.svg"
                             alt="CSS3 Logo"
                         />
                         <p>CSS3</p>
@@ -107,7 +107,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/Coloured/javascript.svg"
+                            src="/images/stack/White/javascript.svg"
                             alt="JavaScript Logo"
                         />
                         <p>JavaScript</p>
@@ -117,7 +117,17 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/Coloured/nextjs.svg"
+                            src="/images/stack/White/typescript.svg"
+                            alt="TypeScript Logo"
+                        />
+                        <p>JavaScript</p>
+                    </li>
+
+                    <li>
+                        <Image
+                            height={100}
+                            width={100}
+                            src="/images/stack/White/nextjs.svg"
                             alt="NextJs Logo"
                         />
                         <p>NextJs</p>
@@ -127,7 +137,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/Coloured/reactjs.svg"
+                            src="/images/stack/White/reactjs.svg"
                             alt="React Logo"
                         />
                         <p>React</p>
@@ -136,7 +146,7 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/Coloured/redux.svg"
+                            src="/images/stack/White/redux.svg"
                             alt="Redux Logo"
                         />
                         <p>Redux</p>
@@ -145,10 +155,37 @@ export default function About() {
                         <Image
                             height={100}
                             width={100}
-                            src="/images/stack/Coloured/sass.svg"
+                            src="/images/stack/White/sass.svg"
                             alt="Sass Logo"
                         />
                         <p>Sass</p>
+                    </li>
+                    <li>
+                        <Image
+                            height={100}
+                            width={100}
+                            src="/images/stack/White/laravel.svg"
+                            alt="Laravel Logo"
+                        />
+                        <p>Laravel</p>
+                    </li>
+                    <li>
+                        <Image
+                            height={100}
+                            width={100}
+                            src="/images/stack/White/bootstrap.svg"
+                            alt="Bootstrap Logo"
+                        />
+                        <p>Bootstrap</p>
+                    </li>
+                    <li>
+                        <Image
+                            height={100}
+                            width={100}
+                            src="/images/stack/White/jquery.svg"
+                            alt="jQuery Logo"
+                        />
+                        <p>jQuery</p>
                     </li>
                 </ul>
             </section>
