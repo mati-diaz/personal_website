@@ -4,17 +4,6 @@ import styles from '@/styles/Layout.module.css';
 import { Open_Sans } from 'next/font/google';
 import { AnimatePresence, motion } from 'framer-motion';
 
-const pageTransition = {
-    initial: {
-        opacity: 0,
-        innerHeight: 0,
-    },
-    animate: { opacity: 1 },
-    exit: {
-        opacity: 0,
-    },
-};
-
 const openSans = Open_Sans({ subsets: ['latin'] });
 
 export default function Layout({ children, route }) {
@@ -35,18 +24,32 @@ export default function Layout({ children, route }) {
 
                 {/* <div className={styles.mainContent}>{children}</div> */}
 
-                <AnimatePresence mode="wait">
-                    <motion.div
-                        key={route}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.2 }}
-                    >
-                        <div className={styles.mainContent}>{children}</div>
-                        {/* {children} */}
-                    </motion.div>
-                </AnimatePresence>
+                {/* Works */}
+                {/* <motion.div
+                    key={route}
+                    initial={{ opacity: 0, innerHeight: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: .3 }}
+                    className={styles.mainContent}
+                >
+                    {children}
+                </motion.div> */}
+
+                <motion.div
+                    key={route}
+                    initial={{ x: 300, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    exit={{ x: 300, opacity: 0 }}
+                    transition={{
+                        type: 'spring',
+                        stiffness: 260,
+                        damping: 20,
+                    }}
+                    className={styles.mainContent}
+                >
+                    {children}
+                </motion.div>
             </div>
         </>
     );
