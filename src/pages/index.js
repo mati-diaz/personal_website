@@ -1,28 +1,27 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from '@/styles/Home.module.css';
 import Layout from '@/components/Layout';
 
 export default function Home() {
     return (
         <Layout>
-            <div className={styles.home}>
-                <main className={styles.main}>
-                    <h1 className={styles.name}>
+            <div className="home">
+                <main className="main">
+                    <h1 className="name">
                         Matias
                         <br />
                         <span>Diaz Ruiz</span>
                     </h1>
 
-                    <p className={styles.description}>
+                    <p className="description">
                         Desarrollador de Software
                     </p>
 
                     <Link href="/contact">
-                        <button className={styles.contact}>Contáctame</button>
+                        <button className="contact">Contáctame</button>
                     </Link>
 
-                    <div className={styles.buttons}>
+                    <div className="buttons">
                         <a
                             target="_blank"
                             rel="noreferrer"
@@ -53,7 +52,7 @@ export default function Home() {
                     </div>
                 </main>
 
-                <div className={styles.decoration}>
+                <div className="decoration">
                     <Image
                         src="/images/code.svg"
                         width={1000}

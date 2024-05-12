@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import styles from '@/styles/About.module.css';
 import Layout from '@/components/Layout';
 
 export default function About() {
@@ -24,7 +23,7 @@ export default function About() {
 
             <section>
                 <h3 className="subtitle">Conocimientos</h3>
-                <ul className={styles.stack}>
+                <ul className="stack">
                     <li>
                         <Image
                             height={100}
@@ -196,11 +195,11 @@ export default function About() {
             <section>
                 <h3 className="subtitle">Cursos y Capacitaciones</h3>
 
-                <ul className={styles.certificates}>
-                    <li className={styles.certificate}>
+                <ul className="certificates">
+                    <li className="certificate">
                         <div>
                             <p>Aceleración en NodeJs</p>
-                            <p className={styles.experienceExtra}>Alkemy</p>
+                            <p className="experienceExtra">Alkemy</p>
                         </div>
 
                         <a
@@ -219,10 +218,10 @@ export default function About() {
                         </a>
                     </li>
 
-                    <li className={styles.certificate}>
+                    <li className="certificate">
                         <div>
                             <p>React</p>
-                            <p className={styles.experienceExtra}>Udemy</p>
+                            <p className="experienceExtra">Udemy</p>
                         </div>
 
                         <a
@@ -241,10 +240,10 @@ export default function About() {
                         </a>
                     </li>
 
-                    <li className={styles.certificate}>
+                    <li className="certificate">
                         <div>
                             <p>NodeJs</p>
-                            <p className={styles.experienceExtra}>Udemy</p>
+                            <p className="experienceExtra">Udemy</p>
                         </div>
 
                         <a
@@ -263,10 +262,10 @@ export default function About() {
                         </a>
                     </li>
 
-                    <li className={styles.certificate}>
+                    <li className="certificate">
                         <div>
                             <p>Git + GitHub</p>
-                            <p className={styles.experienceExtra}>Udemy</p>
+                            <p className="experienceExtra">Udemy</p>
                         </div>
 
                         <a
@@ -285,10 +284,10 @@ export default function About() {
                         </a>
                     </li>
 
-                    <li className={styles.certificate}>
+                    <li className="certificate">
                         <div>
                             <p>Symfony 3</p>
-                            <p className={styles.experienceExtra}>Udemy</p>
+                            <p className="experienceExtra">Udemy</p>
                         </div>
 
                         <a

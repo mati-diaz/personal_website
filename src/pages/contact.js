@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import styles from '@/styles/Contact.module.css';
 import { useState } from 'react';
 import Layout from '@/components/Layout';
 
@@ -124,21 +123,21 @@ export default function Contact() {
 
     return (
         <Layout>
-            <main className={styles.main}>
+            <main className="main">
                 <h1 className="title">Contacto</h1>
 
                 <form
-                    className={styles.form}
+                    className="form"
                     onSubmit={handleSubmit}
                 >
-                    <div className={styles.formField}>
+                    <div className="formField">
                         <label htmlFor="name">Nombre</label>
                         <input
                             onChange={handleInputChange}
                             className={
                                 state.missings &&
                                 state.missings.includes('name')
-                                    ? styles.missing
+                                    ? "missing"
                                     : ''
                             }
                             value={state.fields.name}
@@ -149,13 +148,13 @@ export default function Contact() {
                         />
                     </div>
 
-                    <div className={styles.formField}>
+                    <div className="formField">
                         <label htmlFor="email">Email</label>
                         <input
                             onChange={handleInputChange}
                             className={
                                 state.missings?.includes('email')
-                                    ? styles.missing
+                                    ? "missing"
                                     : ''
                             }
                             value={state.fields.email}
@@ -166,13 +165,13 @@ export default function Contact() {
                         />
                     </div>
 
-                    <div className={styles.formFieldText}>
+                    <div className="formFieldText">
                         <label htmlFor="message">Mensaje</label>
                         <textarea
                             onChange={handleInputChange}
                             className={
                                 state.missings?.includes('message')
-                                    ? styles.missing
+                                    ? "missing"
                                     : ''
                             }
                             value={state.fields.message}
@@ -183,13 +182,13 @@ export default function Contact() {
                         />
                     </div>
 
-                    <div className={styles.footerForm}>
-                        <button className={styles.submit} type="submit">
+                    <div className="footerForm">
+                        <button className="submit" type="submit">
                             Enviar
                         </button>
 
                         {status.loading && (
-                            <div className={styles.loading}>
+                            <div className="loading">
                                 <Image
                                     src="/images/icons/load.svg"
                                     alt="Loading"
@@ -200,7 +199,7 @@ export default function Contact() {
                         )}
 
                         {status.success === true && (
-                            <div className={styles.success}>
+                            <div className="success">
                                 <Image
                                     src="/images/icons/done.svg"
                                     alt="Check"
@@ -212,7 +211,7 @@ export default function Contact() {
                         )}
 
                         {status.success === false && (
-                            <div className={styles.fail}>
+                            <div className="fail">
                                 <Image
                                     src="/images/icons/error.svg"
                                     alt="Fail"
@@ -227,7 +226,7 @@ export default function Contact() {
             </main>
 
             <section>
-                <div className={styles.anothers}>
+                <div className="anothers">
                     <a
                         target="_blank"
                         rel="noreferrer"

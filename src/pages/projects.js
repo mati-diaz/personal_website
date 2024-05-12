@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import styles from '@/styles/Projects.module.css';
 import Layout from '@/components/Layout';
 
 export default function Projects() {
@@ -10,13 +9,13 @@ export default function Projects() {
 
     return (
         <Layout>
-            <main className={styles.main}>
+            <main className="main">
                 <h1 className="title">Proyectos</h1>
 
-                <div className={styles.projects}>
-                    <div className={styles.project}>
+                <div className="projects">
+                    <div className="project">
                         <div>
-                            <div className={styles.imageMain}>
+                            <div className="imageMain">
                                 <Image
                                     src="/images/projects/pr-3.jpg"
                                     width={1000}
@@ -26,9 +25,9 @@ export default function Projects() {
                                     priority
                                 />
                             </div>
-                            <div className={styles.body}>
-                                <p className={styles.title}>Blog App</p>
-                                <div className={styles.tags}>
+                            <div className="body">
+                                <p className="project-title">Blog App</p>
+                                <div className="tags">
                                     <p>Express</p>
                                     <p>NodeJs</p>
                                     <p>MongoDB</p>
@@ -41,7 +40,7 @@ export default function Projects() {
                             rel="noreferrer"
                             href="https://github.com/mati-diaz/blog-app-backend"
                         >
-                            <button className={styles.button}>
+                            <button className="button">
                                 <Image
                                     src="/images/socials/github.png"
                                     width={50}
@@ -53,9 +52,9 @@ export default function Projects() {
                         </a>
                     </div>
 
-                    <div className={styles.project}>
+                    <div className="project">
                         <div>
-                            <div className={styles.imageMain}>
+                            <div className="imageMain">
                                 <Image
                                     src="/images/projects/pr-5.jpg"
                                     width={1000}
@@ -65,9 +64,9 @@ export default function Projects() {
                                     priority
                                 />
                             </div>
-                            <div className={styles.body}>
-                                <p className={styles.title}>API ONG</p>
-                                <div className={styles.tags}>
+                            <div className="body">
+                                <p className="project-title">API ONG</p>
+                                <div className="tags">
                                     <p>NodeJs</p>
                                     <p>Express</p>
                                     <p>MySQL</p>
@@ -81,7 +80,7 @@ export default function Projects() {
                             rel="noreferrer"
                             href="https://github.com/alkemyTech/OT-95-Server"
                         >
-                            <button className={styles.button}>
+                            <button className="button">
                                 <Image
                                     src="/images/socials/github.png"
                                     width={50}
@@ -93,9 +92,9 @@ export default function Projects() {
                         </a>
                     </div>
 
-                    <div className={styles.project}>
+                    <div className="project">
                         <div>
-                            <div className={styles.imageMain}>
+                            <div className="imageMain">
                                 <Image
                                     src="/images/projects/nevicare.png"
                                     width={1000}
@@ -105,9 +104,9 @@ export default function Projects() {
                                     priority
                                 />
                             </div>
-                            <div className={styles.body}>
-                                <p className={styles.title}>Landing Page</p>
-                                <div className={styles.tags}>
+                            <div className="body">
+                                <p className="project-title">Landing Page</p>
+                                <div className="tags">
                                     <p>HTML5</p>
                                     <p>CSS3</p>
                                     <p>JavaScript</p>
@@ -119,7 +118,7 @@ export default function Projects() {
                             rel="noreferrer"
                             href="https://github.com/mati-diaz/Nevicare"
                         >
-                            <button className={styles.button}>
+                            <button className="button">
                                 <Image
                                     src="/images/socials/github.png"
                                     width={50}
