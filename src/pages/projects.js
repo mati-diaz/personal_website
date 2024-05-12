@@ -22,7 +22,7 @@ export default function Projects() {
                                     height={1000}
                                     alt="Project Image"
                                     placeholder="empty"
-                                    priority
+                                    priority={true}
                                 />
                             </div>
                             <div className="body">
@@ -61,7 +61,7 @@ export default function Projects() {
                                     height={1000}
                                     alt="Project Image"
                                     placeholder="empty"
-                                    priority
+                                    priority={true}
                                 />
                             </div>
                             <div className="body">
@@ -101,7 +101,7 @@ export default function Projects() {
                                     height={1000}
                                     alt="Project Image"
                                     placeholder="empty"
-                                    priority
+                                    priority={true}
                                 />
                             </div>
                             <div className="body">
