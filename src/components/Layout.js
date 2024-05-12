@@ -1,9 +1,11 @@
+'use client';
 import { motion } from 'framer-motion';
 import styles from '@/styles/Layout.module.css';
 
-export default function Layout({ children }) {
+export default function Layout({ children, route }) {
     return (
         <motion.div
+            key={route}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
