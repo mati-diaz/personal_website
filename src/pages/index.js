@@ -14,7 +14,7 @@ export default function Home() {
                     </h1>
 
                     <p className={styles.description}>
-                        Desarrollador Web FullStack
+                        Desarrollador de Software
                     </p>
 
                     <Link href="/contact">

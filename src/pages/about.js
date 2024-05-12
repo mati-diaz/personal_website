@@ -190,15 +190,6 @@ export default function About() {
                         />
                         <p>jQuery</p>
                     </motion.li>
-                    <motion.li variants={item}>
-                        <Image
-                            height={100}
-                            width={100}
-                            src="/images/stack/White/framer.svg"
-                            alt="Framer Motion Logo"
-                        />
-                        <p>Motion</p>
-                    </motion.li>
                 </ul>
             </section>
 

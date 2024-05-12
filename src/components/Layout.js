@@ -2,23 +2,11 @@ import Head from 'next/head';
 import NavBar from './NavBar';
 import styles from '@/styles/Layout.module.css';
 import { Open_Sans } from 'next/font/google';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const openSans = Open_Sans({ subsets: ['latin'] });
 
 export default function Layout({ children, route }) {
-
-    const container = {
-        hidden: { opacity: 0 },
-        show: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.06,
-                duration: .4
-            },
-        },
-    };
-
     return (
         <>
             <Head>
@@ -34,15 +22,18 @@ export default function Layout({ children, route }) {
             <div className={openSans.className} style={{ overflow: 'hidden' }}>
                 <NavBar />
 
-                <motion.div
-                    key={route}
-                    initial="hidden"
-                    animate="show"
-                    variants={container}
-                    className={styles.mainContent}
-                >
-                    {children}
-                </motion.div>
+                <AnimatePresence mode="wait">
+                    <motion.div
+                        key={route}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: .2 }}
+                        className={styles.mainContent}
+                    >
+                        {children}
+                    </motion.div>
+                </AnimatePresence>
             </div>
         </>
     );
