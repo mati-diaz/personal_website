@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from '@/styles/About.module.css';
 import { motion } from 'framer-motion';
+import Layout from '@/components/Layout';
 
 export default function About() {
     const item = {
@@ -9,7 +10,7 @@ export default function About() {
     };
 
     return (
-        <>
+        <Layout>
             <main>
                 <h1 className="title">Sobre Mí</h1>
 
@@ -308,6 +309,6 @@ export default function About() {
                     </li>
                 </ul>
             </section>
-        </>
+        </Layout>
     );
 }

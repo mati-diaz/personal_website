@@ -1,7 +1,5 @@
 import '@/styles/globals.css';
-import { AnimatePresence, motion } from 'framer-motion';
-import NavBar from '@/components/NavBar';
-import styles from '@/styles/Layout.module.css';
+import { AnimatePresence } from 'framer-motion';
 
 export default function App({ Component, pageProps, router }) {
     const container = {
@@ -14,24 +12,13 @@ export default function App({ Component, pageProps, router }) {
 
     return (
         <>
-            <NavBar />
-
             <AnimatePresence
                 mode="wait"
                 initial={false}
                 onExitComplete={() => window.scrollTo(0, 0)}
             >
-                <motion.div
-                    key={router.route}
-                    initial="hidden"
-                    animate="show"
-                    exit="exit"
-                    variants={container}
-                    transition={{ duration: .2, type: "keyframes" }}
-                    className={styles.mainContent}
-                >
-                    <Component {...pageProps} key={router.route} />
-                </motion.div>
+                {/* <Component {...pageProps} key={router.route} /> */}
+                <Component {...pageProps} key={router.asPath} />
             </AnimatePresence>
         </>
     );

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styles from '@/styles/Contact.module.css';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Layout from '@/components/Layout';
 
 export default function Contact() {
     const [state, setState] = useState({
@@ -123,7 +124,7 @@ export default function Contact() {
     };
 
     return (
-        <>
+        <Layout>
             <main className={styles.main}>
                 <h1 className="title">Contacto</h1>
 
@@ -279,6 +280,6 @@ export default function Contact() {
                     </motion.a>
                 </div>
             </section>
-        </>
+        </Layout>
     );
 }
