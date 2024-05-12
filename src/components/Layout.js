@@ -2,10 +2,10 @@
 import { motion } from 'framer-motion';
 import styles from '@/styles/Layout.module.css';
 
-export default function Layout({ children, route }) {
+export default function Layout({ children }) {
     return (
         <motion.div
-            key={route}
+            key="test"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
