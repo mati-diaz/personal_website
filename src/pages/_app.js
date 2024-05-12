@@ -1,3 +1,4 @@
+'use client'
 import NavBar from '@/components/NavBar';
 import '@/styles/globals.css';
 import { AnimatePresence } from 'framer-motion';
