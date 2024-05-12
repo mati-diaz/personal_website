@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Projects.module.css';
 import { motion } from 'framer-motion';
-import Layout from '@/components/Layout';
 
 export default function Projects() {
     const item = {
@@ -11,7 +10,7 @@ export default function Projects() {
     };
 
     return (
-        <Layout>
+        <>
             <main className={styles.main}>
                 <h1 className="title">Proyectos</h1>
 
@@ -134,6 +133,6 @@ export default function Projects() {
                     </motion.div>
                 </div>
             </main>
-        </Layout>
+        </>
     );
 }
