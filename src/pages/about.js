@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from '@/styles/About.module.css';
-import { motion } from 'framer-motion';
+import Layout from '@/components/Layout';
 
 export default function About() {
     const item = {
@@ -9,23 +9,23 @@ export default function About() {
     };
 
     return (
-        <>
+        <Layout>
             <main>
                 <h1 className="title">Sobre Mí</h1>
 
-                <motion.p variants={item} className={styles.presentation}>
+                <p>
                     Soy un desarrollador web fullstack de Argentina con enfoque
                     en el desarrollo backend. He trabajado en proyectos de gran
                     envergadura, donde he demostrado habilidades excepcionales
                     en el trabajo en equipo y una rápida capacidad de
                     aprendizaje.
-                </motion.p>
+                </p>
             </main>
 
             <section>
                 <h3 className="subtitle">Conocimientos</h3>
                 <ul className={styles.stack}>
-                    <motion.li variants={item}>
+                    <li>
                         <Image
                             height={100}
                             width={100}
@@ -33,8 +33,8 @@ export default function About() {
                             alt="Php Logo"
                         />
                         <p>PHP</p>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li>
                         <Image
                             height={100}
                             width={100}
@@ -42,8 +42,8 @@ export default function About() {
                             alt="Symfony Logo"
                         />
                         <p>Symfony</p>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li>
                         <Image
                             height={100}
                             width={100}
@@ -51,8 +51,8 @@ export default function About() {
                             alt="NodeJs Logo"
                         />
                         <p>NodeJs</p>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li>
                         <Image
                             height={100}
                             width={100}
@@ -60,8 +60,8 @@ export default function About() {
                             alt="Express Logo"
                         />
                         <p>Express</p>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li>
                         <Image
                             height={100}
                             width={100}
@@ -69,8 +69,8 @@ export default function About() {
                             alt="MySql Logo"
                         />
                         <p>MySql</p>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li>
                         <Image
                             height={100}
                             width={100}
@@ -78,8 +78,8 @@ export default function About() {
                             alt="Mongo Logo"
                         />
                         <p>MongoDB</p>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li>
                         <Image
                             height={100}
                             width={100}
@@ -87,8 +87,8 @@ export default function About() {
                             alt="Git Logo"
                         />
                         <p>Git</p>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li>
                         <Image
                             height={100}
                             width={100}
@@ -96,8 +96,8 @@ export default function About() {
                             alt="HTML5 Logo"
                         />
                         <p>HTML5</p>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li>
                         <Image
                             height={100}
                             width={100}
@@ -105,8 +105,8 @@ export default function About() {
                             alt="CSS3 Logo"
                         />
                         <p>CSS3</p>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li>
                         <Image
                             height={100}
                             width={100}
@@ -114,9 +114,9 @@ export default function About() {
                             alt="JavaScript Logo"
                         />
                         <p>JavaScript</p>
-                    </motion.li>
+                    </li>
 
-                    <motion.li variants={item}>
+                    <li>
                         <Image
                             height={100}
                             width={100}
@@ -124,9 +124,9 @@ export default function About() {
                             alt="TypeScript Logo"
                         />
                         <p>JavaScript</p>
-                    </motion.li>
+                    </li>
 
-                    <motion.li variants={item}>
+                    <li>
                         <Image
                             height={100}
                             width={100}
@@ -134,9 +134,9 @@ export default function About() {
                             alt="NextJs Logo"
                         />
                         <p>NextJs</p>
-                    </motion.li>
+                    </li>
 
-                    <motion.li variants={item}>
+                    <li>
                         <Image
                             height={100}
                             width={100}
@@ -144,8 +144,8 @@ export default function About() {
                             alt="React Logo"
                         />
                         <p>React</p>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li>
                         <Image
                             height={100}
                             width={100}
@@ -153,8 +153,8 @@ export default function About() {
                             alt="Redux Logo"
                         />
                         <p>Redux</p>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li>
                         <Image
                             height={100}
                             width={100}
@@ -162,8 +162,8 @@ export default function About() {
                             alt="Sass Logo"
                         />
                         <p>Sass</p>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li>
                         <Image
                             height={100}
                             width={100}
@@ -171,8 +171,8 @@ export default function About() {
                             alt="Laravel Logo"
                         />
                         <p>Laravel</p>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li>
                         <Image
                             height={100}
                             width={100}
@@ -180,8 +180,8 @@ export default function About() {
                             alt="Bootstrap Logo"
                         />
                         <p>Bootstrap</p>
-                    </motion.li>
-                    <motion.li variants={item}>
+                    </li>
+                    <li>
                         <Image
                             height={100}
                             width={100}
@@ -189,7 +189,7 @@ export default function About() {
                             alt="jQuery Logo"
                         />
                         <p>jQuery</p>
-                    </motion.li>
+                    </li>
                 </ul>
             </section>
 
@@ -308,6 +308,6 @@ export default function About() {
                     </li>
                 </ul>
             </section>
-        </>
+        </Layout>
     );
 }

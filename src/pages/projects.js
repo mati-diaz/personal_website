@@ -1,7 +1,6 @@
-import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Projects.module.css';
-import { motion } from 'framer-motion';
+import Layout from '@/components/Layout';
 
 export default function Projects() {
     const item = {
@@ -10,12 +9,12 @@ export default function Projects() {
     };
 
     return (
-        <>
+        <Layout>
             <main className={styles.main}>
                 <h1 className="title">Proyectos</h1>
 
                 <div className={styles.projects}>
-                    <motion.div variants={item} className={styles.project}>
+                    <div className={styles.project}>
                         <div>
                             <div className={styles.imageMain}>
                                 <Image
@@ -52,9 +51,9 @@ export default function Projects() {
                                 <p>Ver Codigo</p>
                             </button>
                         </a>
-                    </motion.div>
+                    </div>
 
-                    <motion.div variants={item} className={styles.project}>
+                    <div className={styles.project}>
                         <div>
                             <div className={styles.imageMain}>
                                 <Image
@@ -92,9 +91,9 @@ export default function Projects() {
                                 <p>Ver Codigo</p>
                             </button>
                         </a>
-                    </motion.div>
+                    </div>
 
-                    <motion.div variants={item} className={styles.project}>
+                    <div className={styles.project}>
                         <div>
                             <div className={styles.imageMain}>
                                 <Image
@@ -130,9 +129,9 @@ export default function Projects() {
                                 <p>Ver Codigo</p>
                             </button>
                         </a>
-                    </motion.div>
+                    </div>
                 </div>
             </main>
-        </>
+        </Layout>
     );
 }

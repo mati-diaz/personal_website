@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from '@/styles/Contact.module.css';
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import Layout from '@/components/Layout';
 
 export default function Contact() {
     const [state, setState] = useState({
@@ -123,12 +123,11 @@ export default function Contact() {
     };
 
     return (
-        <>
+        <Layout>
             <main className={styles.main}>
                 <h1 className="title">Contacto</h1>
 
-                <motion.form
-                    variants={item}
+                <form
                     className={styles.form}
                     onSubmit={handleSubmit}
                 >
@@ -224,13 +223,12 @@ export default function Contact() {
                             </div>
                         )}
                     </div>
-                </motion.form>
+                </form>
             </main>
 
             <section>
                 <div className={styles.anothers}>
-                    <motion.a
-                        variants={item}
+                    <a
                         target="_blank"
                         rel="noreferrer"
                         href="https://github.com/mati-diaz/"
@@ -244,9 +242,8 @@ export default function Contact() {
                             />
                             <p>GitHub</p>
                         </div>
-                    </motion.a>
-                    <motion.a
-                        variants={item}
+                    </a>
+                    <a
                         target="_blank"
                         rel="noreferrer"
                         href="https://www.linkedin.com/in/mati-diaz/"
@@ -260,9 +257,9 @@ export default function Contact() {
                             />
                             <p>Linkedin</p>
                         </div>
-                    </motion.a>
+                    </a>
 
-                    <motion.a variants={item}
+                    <a
                         target="_blank"
                         rel="noreferrer"
                         href="mailto:matias.dzrz@gmail.com"
@@ -276,9 +273,9 @@ export default function Contact() {
                             />
                             <p>Correo</p>
                         </div>
-                    </motion.a>
+                    </a>
                 </div>
             </section>
-        </>
+        </Layout>
     );
 }
