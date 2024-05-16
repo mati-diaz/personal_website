@@ -122,7 +122,7 @@ export default function About() {
                             src="/images/stack/White/typescript.svg"
                             alt="TypeScript Logo"
                         />
-                        <p>JavaScript</p>
+                        <p>TypeScript</p>
                     </li>
 
                     <li>
